@@ -122,7 +122,174 @@ body {
 }
 
 
+#contact {
+    position: relative;
+    padding-bottom: 4rem;
+    /* Adjust based on footer height */
+}
 
+.footer {
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.project_container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.project_item {
+    flex-shrink: 0;
+    width: 300px;
+    /* Adjust width as needed */
+    scroll-snap-align: start;
+}
+
+.project_item img {
+    width: 100%;
+    height: auto;
+}
+
+.project_item h1,
+.project_item h6,
+.project_item p {
+    color: white;
+}
+
+
+
+/* Typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: white;
+    }
+}
+
+#typing-text {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    width: 0;
+    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Fade-in effect */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn ease 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fade-in effect */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn ease 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Image hover effect */
+.group:hover #abt-img {
+    transform: scale(1.1);
+}
+
+
+/* Fade-in and Slide-up effect */
+.animate-fadeIn {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.animate-slideUp {
+    transform: translateY(20px);
+    animation: slideUp 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Background animation */
+.animate-pulse {
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {

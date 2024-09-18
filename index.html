@@ -10,666 +10,988 @@
       href="https://images.unsplash.com/photo-1610438250910-01cb769c1334?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDkwOTcxOTd8&ixlib=rb-4.0.3&q=1"
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style.css" />
-	<link rel="stylesheet" href="./viewbox.css">
-
+    <link rel="stylesheet" href="./viewbox.css" />
   </head>
   <body>
-    <!--Hero Section-->
-    <div class="app-container flex items-center" id="hero" fade-content>
-      <!--Nav Item-->
-      <div class="fixed drop-shadow-xl z-10 top-0 w-full text-center">
-        <div
-          class="flex flex-wrap gap-6 items-center text-xs nav-border backdrop-blur rounded-full w-11/12 px-8 py-2 mx-auto mt-4"
-        >
-          <a class="tracking-wider text-xl font-bold" href="#hero"></a>
-          <a class="block" href="#hero">Home</a>
-          <a class="block" href="#projects">Projects</a>
-          <a class="block" href="#about">About</a>
-          <a class="block" href="#contact">Contact</a>
-        </div>
-      </div>
-
-      <div
-        class="container flex p-2 px-4 font-bold flex-col gap-4 tracking-wider max-w-7xl mx-auto"
+    <!-- Hero Section -->
+    <div
+      class="app-container relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white pt-24 sm:pt-32"
+      id="hero"
+    >
+      <!-- Navigation Bar -->
+      <nav
+        class="fixed top-0 left-0 w-full bg-opacity-90 backdrop-blur-lg py-4 shadow-md z-30"
       >
-        <h1 class="text-8xl drop-shadow-xl ml-4 xl:ml-0 k2d glow">Abu Osama</h1>
-        <h1 class="text-8xl drop-shadow-xl ml-4 xl:ml-0 k2d glow">Shaikh</h1>
-        <div class="relative mt-8 ml-4 xl:ml-0">
-          <p
-            class="font-thin text-2xl drop-shadow max-w-md mt-4 border-l pl-4 relative"
+        <div class="container mx-auto flex justify-between items-center px-6">
+          <a href="#hero" class="text-2xl font-bold tracking-wider"
+            >Abu Osama</a
           >
-            I'm a Software developer and I work remotely from Thane, Mumbai. I
-            specialize in creating dynamic and beautiful web applications.
-          </p>
 
-          <div
-            class="absolute w-1 h-1 bg-white rounded-full bottom-0 -left-0.5"
-          ></div>
-        </div>
-      </div>
-      <div class="absolute right-4 z-10 hidden md:block">
-        <div class="flex flex-col gap-4">
-          <a href="https://github.com/Shady-shaikh" target="_blank">
-          <img
-            class="w-10 mx-auto drop-shadow hover:drop-shadow-xl aspect-square hover:scale-105 transition-transform cursor-pointer"
-            draggable="false"
-            src="./imgs/code.png"
-            alt="github"
-            srcset=""
-          />
-        </a>
-        <a href="https://www.linkedin.com/in/usama-shaikh-81294a306/" target="_blank">
-          <img
-            class="w-14 mx-auto drop-shadow hover:drop-shadow-xl aspect-square hover:scale-105 transition-transform cursor-pointer"
-            draggable="false"
-            src="./imgs/linkedin.png"
-            alt="linkedin"
-            srcset=""
-          />
-          </a>
-          <a href="https://drive.google.com/file/d/1Fhol2HvsZHggz6B5NBCtBe3XlFIA0zOw/view" target="_blank">
-          <img
-            class="w-10 mx-auto drop-shadow hover:drop-shadow-xl aspect-square hover:scale-105 transition-transform cursor-pointer"
-            draggable="false"
-            src="./imgs/resume.png"
-            alt="cv"
-            srcset=""
-          />
-          </a>
-        </div>
-      </div>
-
-      <!--BG FX-->
-      <div class="absolute -z-10 left-0 top-0 w-full h-full overflow-hidden">
-        <div
-          class="absolute h-1/2 polka_dots -left-16 top-1/4 -z-5 rotate-90 aspect-video"
-        ></div>
-        <div
-          class="absolute -z-10 bg-dot blur-3xl -left-96 top-1/3 h-2/3 aspect-square bg-white rounded-full opacity-5"
-        ></div>
-        <div
-          class="absolute -z-10 bg-dot blur-3xl -right-64 -top-64 h-1/2 aspect-square primary-grad rounded-full opacity-40"
-        ></div>
-        <div
-          class="absolute -z-10 bg-dot blur-3xl -right-64 top-1/3 h-1/2 aspect-square second-grad opacity-40 rounded-full"
-        ></div>
-        <div
-          class="absolute -z-10 bg-dot blur-3xl -right-64 -bottom-64 h-1/2 aspect-square third-grad opacity-40 rounded-full"
-        ></div>
-        <div
-          class="hidden md:block hero-circle circle h-1/2 aspect-square absolute -bottom-5 right-10 rounded-full"
-        ></div>
-        <div
-          class="hidden sm:block hero-circle circle h-24 aspect-square absolute bottom-1/2 right-10 rounded-full"
-        ></div>
-      </div>
-    </div>
-    <!--About Section-->
-    <div class="app-container" id="about">
-      <div class="container mt-24 h-fit mx-8 md:mx-auto">
-        <h1
-          class="k2d font-bold mx-auto w-56 text-5xl tracking-wider about_heading"
-        >
-          About
-        </h1>
-        <h1
-          class="k2d font-bold flex relative items-center mx-auto w-56 text-5xl about_heading tracking-wider"
-        >
-          Me
-          <svg
-            class="h-12 origin-left scale-x-150 scale-y-60 about_heading absolute right-0 fill-secondary glow-el-secondary"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512"
-          >
-            <path
-              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-            />
-          </svg>
-        </h1>
-        <!--Image Section-->
-        <div class="relative">
-          <div
-            class="flex drop-shadow-xl rounded-full overflow-hidden aspect-square w-1/2 max-w-xl"
-          >
-            <img
-              id="abt-img"
-              src="https://images.unsplash.com/photo-1610438250910-01cb769c1334?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDkwOTcxOTd8&ixlib=rb-4.0.3&q=1"
-              alt=""
-              srcset=""
-              alt=""
-            />
+          <!-- Hamburger Icon for Mobile -->
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-white focus:outline-none"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
           </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-6">
+            <a class="hover:text-yellow-300 transition-colors" href="#hero"
+              >Home</a
+            >
+            <a class="hover:text-yellow-300 transition-colors" href="#projects"
+              >Projects</a
+            >
+            <a class="hover:text-yellow-300 transition-colors" href="#about"
+              >About</a
+            >
+            <a class="hover:text-yellow-300 transition-colors" href="#contact"
+              >Contact</a
+            >
+          </div>
+
+          <!-- Mobile Menu (Initially hidden) -->
           <div
-            class="circle w-20 left-4 about_bounce bottom-4 aspect-square absolute rounded-full"
-          ></div>
+            id="mobile-menu"
+            class="hidden md:hidden absolute top-full left-0 w-full bg-gray-900 text-white space-y-4 py-4 text-center"
+          >
+            <a
+              class="block hover:text-yellow-300 transition-colors"
+              href="#hero"
+              >Home</a
+            >
+            <a
+              class="block hover:text-yellow-300 transition-colors"
+              href="#projects"
+              >Projects</a
+            >
+            <a
+              class="block hover:text-yellow-300 transition-colors"
+              href="#about"
+              >About</a
+            >
+            <a
+              class="block hover:text-yellow-300 transition-colors"
+              href="#contact"
+              >Contact</a
+            >
+          </div>
         </div>
-        <!--About Content-->
-        <div
-          class="w-full md:w-1/3 about_bounce top-1/3 p-4 drop-shadow-xl absolute right-0 md:right-1/4 rounded-xl min-h-48 backdrop-blur"
-        >
-          <p class="tracking-wide">
-            Hi, I'm Abu Osama, a dedicated Software Developer with extensive
-            experience in PHP development. Throughout my career, I've worked on
-            diverse projects including SAP systems, billing solutions, school
-            management systems, e-commerce platforms, content management systems
-            (CMS), and various API-based projects.
+      </nav>
+
+      <!-- Main Content with Animations -->
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center justify-between text-center md:text-left px-6 py-12"
+      >
+        <!-- Text Content with Typing Animation -->
+        <div class="md:w-1/2">
+          <h2 class="text-4xl md:text-5xl font-semibold mb-6">
+            <span id="typing-text"></span>
+          </h2>
+          <p
+            class="text-lg md:text-xl font-light max-w-lg mx-auto md:mx-0 fade-in"
+          >
+            With over two years of experience, I specialize in building dynamic
+            and scalable web applications. Passionate about technology and
+            dedicated to delivering high-quality software.
           </p>
 
-          <p class="tracking-wide">
-            I also have a background in mobile app development, having created
-            both offline and online applications using Flutter and Android
-            Studio.I am passionate about delivering high-quality software that
-            makes a difference.
-          </p>
-
-          <p class="tracking-wide">
-            Beyond coding, I enjoy keeping up with the latest advancements in
-            technology and contributing to open-source projects.
-          </p>
-
+          <!-- Buttons with Fade-in -->
+          <div
+            class="mt-8 flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 fade-in"
+          >
+            <a
+              href="https://github.com/Shady-shaikh"
+              target="_blank"
+              class="px-4 py-2 bg-yellow-500 text-gray-900 rounded-lg text-sm font-semibold hover:bg-yellow-400 transition-colors"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/usama-shaikh-81294a306"
+              target="_blank"
+              class="px-4 py-2 bg-yellow-500 text-gray-900 rounded-lg text-sm font-semibold hover:bg-yellow-400 transition-colors"
+              >LinkedIn</a
+            >
+            <a
+              href="https://drive.google.com/file/d/1Fhol2HvsZHggz6B5NBCtBe3XlFIA0zOw/view"
+              target="_blank"
+              class="px-4 py-2 bg-yellow-500 text-gray-900 rounded-lg text-sm font-semibold hover:bg-yellow-400 transition-colors"
+              >Download Resume</a
+            >
+          </div>
         </div>
 
-        <div
-          class="absolute h-48 polka_dots bottom-16 right-24 -z-10 aspect-video"
-        ></div>
+        <!-- Image Section with Fade-in -->
+        <div class="md:w-1/2 mt-8 md:mt-0 fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1610438250910-01cb769c1334?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDkwOTcxOTd8&ixlib=rb-4.0.3&q=1"
+            alt="Profile Picture"
+            class="rounded-full shadow-lg w-48 h-48 object-cover mx-auto md:mx-0"
+          />
+        </div>
       </div>
     </div>
-    <!--Skills section-->
-    <div class="app-container overflow-hidden" id="skills" fade-content>
-      <div class="container flex flex-col h-fit mx-auto">
-        <h1 class="text-5xl font-bold k2d mx-auto mt-16 skill_items">
-          My Skills
-        </h1>
 
-        <ul class="flex gap-4 my-8 mx-auto skill_items text-xs sm:text-base">
-          <li class="ml-4">
-            <button class="border nav-border px-2 hover:bg-black rounded-full">
-              Web developer
+    <!-- About Section -->
+    <div
+      class="app-container relative min-h-screen bg-gradient-to-r from-gray-800 to-gray-900 text-white"
+      id="about"
+    >
+      <!-- Container -->
+      <div class="container mx-auto px-6 py-12">
+        <!-- Heading with Animation -->
+        <div class="text-center mb-12 relative z-20">
+          <h1 class="text-5xl md:text-6xl font-bold tracking-wider fade-in">
+            About <span class="text-yellow-400">Me</span>
+          </h1>
+        </div>
+
+        <!-- Image and Text Section -->
+        <div class="flex flex-col md:flex-row items-center justify-center">
+          <!-- Image Section with Hover Effect -->
+          <div
+            class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 mb-8 md:mb-0 relative group"
+          >
+            <div
+              class="flex drop-shadow-xl rounded-full overflow-hidden aspect-square w-full max-w-xl mx-auto"
+            >
+              <img
+                id="abt-img"
+                src="https://images.unsplash.com/photo-1610438250910-01cb769c1334?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDkwOTcxOTd8&ixlib=rb-4.0.3&q=1"
+                alt="Profile Picture"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+            <div
+              class="absolute bottom-4 left-4 w-20 h-20 bg-yellow-400 rounded-full opacity-30 animate-pulse"
+            ></div>
+          </div>
+
+          <!-- About Content with Fade-in -->
+          <div
+            class="flex-1 w-full md:w-1/2 lg:w-2/3 p-6 drop-shadow-xl rounded-xl backdrop-blur-lg bg-gray-800 bg-opacity-70 fade-in"
+          >
+            <p class="text-lg leading-relaxed mb-4">
+              Hi, I'm Abu Osama, a dedicated Software Developer with extensive
+              experience in PHP development. I've worked on a range of projects,
+              including SAP systems, billing solutions, school management
+              systems, e-commerce platforms, content management systems (CMS),
+              and various API-based projects.
+            </p>
+            <p class="text-lg leading-relaxed mb-4">
+              I also have a background in mobile app development, having created
+              both offline and online applications using Flutter and Android
+              Studio. I am passionate about delivering high-quality software
+              that makes a difference.
+            </p>
+            <p class="text-lg leading-relaxed">
+              Beyond coding, I enjoy staying updated with the latest
+              advancements in technology and contributing to open-source
+              projects.
+            </p>
+          </div>
+        </div>
+
+        <!-- Background Effects with Animation -->
+        <div class="absolute inset-0 -z-10 overflow-hidden">
+          <div
+            class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-gray-900 to-transparent opacity-30"
+          ></div>
+          <div
+            class="absolute top-1/4 -left-16 w-1/2 h-1/2 bg-yellow-300 rounded-full blur-3xl opacity-10 animate-pulse"
+          ></div>
+          <div
+            class="absolute top-1/2 -right-64 w-1/2 h-1/2 bg-yellow-400 rounded-full blur-3xl opacity-20 animate-pulse"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div
+      class="app-container relative min-h-screen bg-gradient-to-r from-gray-800 to-gray-900 text-white"
+      id="skills"
+    >
+      <!-- Container -->
+      <div class="container mx-auto px-6 py-12">
+        <!-- Heading with Animation -->
+        <div class="text-center mb-12 animate-fadeIn animate-slideUp">
+          <h1 class="text-5xl md:text-6xl font-bold tracking-wider">
+            My <span class="text-yellow-400">Skills</span>
+          </h1>
+        </div>
+
+        <!-- Skills Categories with Hover Effects -->
+        <ul class="flex flex-wrap justify-center gap-4 mb-12">
+          <li>
+            <button
+              class="border border-yellow-400 px-4 py-2 rounded-full transition-colors duration-300 hover:bg-yellow-400 hover:text-gray-900"
+            >
+              Web Development
             </button>
           </li>
           <li>
-            <button class="border nav-border px-2 hover:bg-black rounded-full">
-              Php developer
+            <button
+              class="border border-yellow-400 px-4 py-2 rounded-full transition-colors duration-300 hover:bg-yellow-400 hover:text-gray-900"
+            >
+              PHP Development
             </button>
           </li>
           <li>
-            <button class="border nav-border px-2 hover:bg-black rounded-full">
-              Api development
+            <button
+              class="border border-yellow-400 px-4 py-2 rounded-full transition-colors duration-300 hover:bg-yellow-400 hover:text-gray-900"
+            >
+              API Development
             </button>
           </li>
-          <li class="mr-4">
-            <button class="border nav-border px-2 hover:bg-black rounded-full">
-              Software Developer
+          <li>
+            <button
+              class="border border-yellow-400 px-4 py-2 rounded-full transition-colors duration-300 hover:bg-yellow-400 hover:text-gray-900"
+            >
+              Software Development
             </button>
           </li>
         </ul>
 
-        <!-- Skills Grid -->
-        <div class="max-w-6xl w-full mx-auto my-8 p-4">
+        <!-- Skills Grid with Hover Animations -->
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6"
+        >
+          <!-- Skill Item -->
+          <!-- Repeat for each skill item -->
+          <!-- Skill Item -->
           <div
-            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6"
+            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
           >
-            <!-- Skill Item -->
-            <div class="flex flex-col items-center skill_item">
-              <img src="./imgs/php.png" alt="PHP" class="w-12 h-12" />
-              <p class="text-lg font-semibold">PHP</p>
-            </div>
-            <div class="flex flex-col items-center skill_item">
-              <img src="./imgs/database.png" alt="SQL" class="w-12 h-12" />
-              <p class="text-lg font-semibold">SQL</p>
-            </div>
-            <div class="flex flex-col items-center skill_item">
-              <img src="./imgs/laravel.png" alt="Laravel" class="w-12 h-12" />
-              <p class="text-lg font-semibold">Laravel</p>
-            </div>
-            <div class="flex flex-col items-center skill_item">
-              <img src="./imgs/ci.png" alt="Codeigniter" class="w-12 h-12" />
-              <p class="text-lg font-semibold">Codeigniter</p>
-            </div>
-            <div class="flex flex-col items-center skill_item">
-              <img src="./imgs/yii2.png" alt="Yii2" class="w-12 h-12" />
-              <p class="text-lg font-semibold">Yii2</p>
-            </div>
-            <div class="flex flex-col items-center skill_item">
-              <img src="./imgs/json-file.png" alt="JSON" class="w-12 h-12" />
-              <p class="text-lg font-semibold">JSON</p>
-            </div>
-            <div class="flex flex-col items-center skill_item">
-              <img src="./imgs/js.png" alt="JavaScript" class="w-12 h-12" />
-              <p class="text-lg font-semibold">JavaScript</p>
-            </div>
-            <div class="flex flex-col items-center skill_item">
-              <img src="./imgs/web.png" alt="Jquery/Ajax" class="w-12 h-12" />
-              <p class="text-lg font-semibold">Jquery/Ajax</p>
-            </div>
-            <div class="flex flex-col items-center skill_item">
-              <img src="./imgs/java.png" alt="Java" class="w-12 h-12" />
-              <p class="text-lg font-semibold">Java</p>
-            </div>
-            <div class="flex flex-col items-center skill_item">
-              <img
-                src="./imgs/android.png"
-                alt="Android Studio"
-                class="w-12 h-12"
-              />
-              <p class="text-lg font-semibold">Android Studio</p>
-            </div>
-            <div class="flex flex-col items-center skill_item">
-              <img src="./imgs/html.png" alt="HTML" class="w-12 h-12" />
-              <p class="text-lg font-semibold">HTML</p>
-            </div>
-            <div class="flex flex-col items-center skill_item">
-              <img src="./imgs/css-3.png" alt="CSS" class="w-12 h-12" />
-              <p class="text-lg font-semibold">CSS</p>
-            </div>
-            <div class="flex flex-col items-center skill_item">
-              <img src="./imgs/postman.png" alt="POSTMAN" class="w-12 h-12" />
-              <p class="text-lg font-semibold">POSTMAN</p>
-            </div>
-            <div class="flex flex-col items-center skill_item">
-              <img src="./imgs/api.png" alt="API" class="w-12 h-12" />
-              <p class="text-lg font-semibold">API</p>
-            </div>
-            <div class="flex flex-col items-center skill_item">
-              <img src="./imgs/firebase.png" alt="Firebase" class="w-12 h-12" />
-              <p class="text-lg font-semibold">Firebase</p>
-            </div>
-            <div class="flex flex-col items-center skill_item">
-              <img src="./imgs/sqlite.png" alt="SQLite" class="w-12 h-12" />
-              <p class="text-lg font-semibold">SQLite</p>
-            </div>
-            <div class="flex flex-col items-center skill_item">
-              <img src="./imgs/letter-c.png" alt="C/C++" class="w-12 h-12" />
-              <p class="text-lg font-semibold">C/C++</p>
-            </div>
-            <div class="flex flex-col items-center skill_item">
-              <img
-                src="./imgs/zohobooks.png"
-                alt="Zoho Books"
-                class="w-12 h-12"
-              />
-              <p class="text-lg font-semibold">Zoho Books</p>
-            </div>
-            <div class="flex flex-col items-center skill_item">
-              <img src="./imgs/flutter.jpg" alt="Flutter" class="w-12 h-12" />
-              <p class="text-lg font-semibold">Flutter</p>
-            </div>
-            <div class="flex flex-col items-center skill_item">
-              <img src="./imgs/dart.png" alt="Dart" class="w-12 h-12" />
-              <p class="text-lg font-semibold">Dart</p>
-            </div>
+            <img src="./imgs/php.png" alt="PHP" class="w-16 h-16 mb-2" />
+            <p class="text-lg font-semibold">PHP</p>
           </div>
+          <div
+            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img src="./imgs/database.png" alt="SQL" class="w-16 h-16 mb-2" />
+            <p class="text-lg font-semibold">SQL</p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="./imgs/laravel.png"
+              alt="Laravel"
+              class="w-16 h-16 mb-2"
+            />
+            <p class="text-lg font-semibold">Laravel</p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img src="./imgs/ci.png" alt="Codeigniter" class="w-16 h-16 mb-2" />
+            <p class="text-lg font-semibold">Codeigniter</p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img src="./imgs/yii2.png" alt="Yii2" class="w-16 h-16 mb-2" />
+            <p class="text-lg font-semibold">Yii2</p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img src="./imgs/json-file.png" alt="JSON" class="w-16 h-16 mb-2" />
+            <p class="text-lg font-semibold">JSON</p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img src="./imgs/js.png" alt="JavaScript" class="w-16 h-16 mb-2" />
+            <p class="text-lg font-semibold">JavaScript</p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="./imgs/web.png"
+              alt="Jquery/Ajax"
+              class="w-16 h-16 mb-2"
+            />
+            <p class="text-lg font-semibold">jQuery/Ajax</p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img src="./imgs/java.png" alt="Java" class="w-16 h-16 mb-2" />
+            <p class="text-lg font-semibold">Java</p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="./imgs/android.png"
+              alt="Android Studio"
+              class="w-16 h-16 mb-2"
+            />
+            <p class="text-lg font-semibold">Android Studio</p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img src="./imgs/html.png" alt="HTML" class="w-16 h-16 mb-2" />
+            <p class="text-lg font-semibold">HTML</p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img src="./imgs/css-3.png" alt="CSS" class="w-16 h-16 mb-2" />
+            <p class="text-lg font-semibold">CSS</p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="./imgs/postman.png"
+              alt="POSTMAN"
+              class="w-16 h-16 mb-2"
+            />
+            <p class="text-lg font-semibold">POSTMAN</p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img src="./imgs/api.png" alt="API" class="w-16 h-16 mb-2" />
+            <p class="text-lg font-semibold">API</p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="./imgs/firebase.png"
+              alt="Firebase"
+              class="w-16 h-16 mb-2"
+            />
+            <p class="text-lg font-semibold">Firebase</p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img src="./imgs/sqlite.png" alt="SQLite" class="w-16 h-16 mb-2" />
+            <p class="text-lg font-semibold">SQLite</p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img src="./imgs/letter-c.png" alt="C/C++" class="w-16 h-16 mb-2" />
+            <p class="text-lg font-semibold">C/C++</p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="./imgs/zohobooks.png"
+              alt="Zoho Books"
+              class="w-16 h-16 mb-2"
+            />
+            <p class="text-lg font-semibold">Zoho Books</p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="./imgs/flutter.jpg"
+              alt="Flutter"
+              class="w-16 h-16 mb-2"
+            />
+            <p class="text-lg font-semibold">Flutter</p>
+          </div>
+          <div
+            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img src="./imgs/dart.png" alt="Dart" class="w-16 h-16 mb-2" />
+            <p class="text-lg font-semibold">Dart</p>
+          </div>
+          <!-- Add other skills similarly -->
         </div>
 
-        <!-- Decorative elements -->
+        <!-- Decorative elements with Animation -->
         <div
-          class="absolute h-48 polka_dots left-1/8 top-1/4 -z-10 rotate-90 aspect-video"
+          class="absolute h-48 polka_dots -left-16 top-1/4 -z-10 rotate-90 aspect-video opacity-20 animate-pulse"
         ></div>
         <div
-          class="absolute h-64 polka_dots right-48 opacity-50 bottom-1/4 -z-10 aspect-video"
+          class="absolute h-64 polka_dots right-1/4 bottom-1/4 -z-10 opacity-30 animate-pulse"
         ></div>
         <div
-          class="circle h-1/3 skill_circle aspect-square rounded-full absolute right-8 top-2/4 -z-10"
+          class="circle h-1/3 skill_circle aspect-square rounded-full absolute right-8 top-2/4 -z-10 opacity-30 animate-pulse"
         ></div>
       </div>
     </div>
 
-    <!--Project Section-->
-    <div class="app-container overflow-hidden" id="projects">
-      <div class="container flex flex-col h-fit mx-auto">
-        <h1
-          class="text-5xl font-bold tracking-wider k2d ml-auto mt-16 mr-16 project_items"
+    <!-- Project Section -->
+    <div
+      class="app-container relative min-h-screen bg-gradient-to-r from-gray-800 to-gray-900 text-white"
+      id="projects"
+    >
+      <div class="container flex flex-col mx-auto px-4 py-8">
+        <div
+          class="text-center mb-12 animate__animated animate__fadeIn animate__delay-1s"
         >
-          My Projects
-        </h1>
+          <h1 class="text-5xl md:text-6xl font-bold tracking-wider">
+            My <span class="text-yellow-400">Projects</span>
+          </h1>
+        </div>
 
         <div
-          class="container project_container relative max-w-4xl pt-4 flex flex-col gap-16 md:gap-24 px-4 sm:px-0 sm:mx-auto"
+          class="project_container flex flex-wrap justify-center gap-6 py-4 px-4 sm:px-0"
         >
+          <!-- Project Item -->
           <div
-            class="absolute project_placeholder hidden sm:block -left-5 w-2 h-full border-l border-white"
+            class="project_item flex-shrink-0 w-80 bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 animate__animated animate__fadeIn animate__delay-3s"
           >
-            <div
-              class="absolute -left-1 -bottom-1 aspect-square w-2 bg-white glow-el rounded-full"
-            ></div>
-          </div>
-
-          <div class="flex items-center gap-4 project_items container">
-            <div class="aspect-video h-48 rounded-xl">
-              <a href="./projects/gurkul.png" class="thumbnail1" title="">
-                <img src="./projects/gurkul.png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/gurukul1.png" class="thumbnail1 d-none" title="">
-                <img src="./projects/gurukul1.png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/gurukul (1).png" class="thumbnail1 d-none" title="">
-                <img src="./projects/gurukul (1).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/gurukul (2).png" class="thumbnail1 d-none" title="">
-                <img src="./projects/gurukul (2).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/gurukul (3).png" class="thumbnail1 d-none" title="">
-                <img src="./projects/gurukul (3).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/gurukul (4).png" class="thumbnail1 d-none" title="">
-                <img src="./projects/gurukul (4).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/gurukul (5).png" class="thumbnail1 d-none" title="">
-                <img src="./projects/gurukul (5).png" alt="" class="img-fluid">
-              </a>
-              </a>
-            </div>
-            <div>
-              <h1 class="k2d font-bold tracking-wider text-xl glow">
-                School Management System
-              </h1>
-              <h6>Contributed</h6>
-              <p>July 2022 - Sep 2022</p>
-            </div>
-          </div>
-
-          <div class="flex items-center gap-4 project_items">
-            <div class="w-full">
-              <h1
-                class="ml-auto w-fit k2d font-bold tracking-wider text-xl glow"
-              >
-                Timer and Task System
-              </h1>
-              <h6 class="ml-auto w-fit">Contributed</h6>
-              <p class="ml-auto w-fit">Sep 2022 - Jan 2022</p>
-            </div>
-            <div class="aspect-video h-48 rounded-xl">
-              <a href="./projects/timer.png" class="thumbnail2" title="">
-                <img src="./projects/timer.png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/timer (1).png" class="thumbnail2 d-none" title="">
-                <img src="./projects/timer (1).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/timer (2).png" class="thumbnail2 d-none" title="">
-                <img src="./projects/timer (2).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/timer (3).png" class="thumbnail2 d-none" title="">
-                <img src="./projects/timer (3).png" alt="" class="img-fluid">
-              </a>
+            <a href="./projects/gurkul.png" class="thumbnail1" title="">
+              <img src="./projects/gurkul.png" alt="" class="img-fluid" />
+            </a>
+            <a
+              href="./projects/gurukul1.png"
+              class="thumbnail1 d-none"
+              title=""
+            >
+              <img src="./projects/gurukul1.png" alt="" class="img-fluid" />
+            </a>
+            <a
+              href="./projects/gurukul (1).png"
+              class="thumbnail1 d-none"
+              title=""
+            >
+              <img src="./projects/gurukul (1).png" alt="" class="img-fluid" />
+            </a>
+            <a
+              href="./projects/gurukul (2).png"
+              class="thumbnail1 d-none"
+              title=""
+            >
+              <img src="./projects/gurukul (2).png" alt="" class="img-fluid" />
+            </a>
+            <a
+              href="./projects/gurukul (3).png"
+              class="thumbnail1 d-none"
+              title=""
+            >
+              <img src="./projects/gurukul (3).png" alt="" class="img-fluid" />
+            </a>
+            <a
+              href="./projects/gurukul (4).png"
+              class="thumbnail1 d-none"
+              title=""
+            >
+              <img src="./projects/gurukul (4).png" alt="" class="img-fluid" />
+            </a>
+            <a
+              href="./projects/gurukul (5).png"
+              class="thumbnail1 d-none"
+              title=""
+            >
+              <img src="./projects/gurukul (5).png" alt="" class="img-fluid" />
+            </a>
+            <div class="p-4">
+              <h2 class="font-bold text-xl mb-2">School Management System</h2>
+              <h6 class="text-gray-400 mb-2">Contributed</h6>
+              <p class="text-gray-300 mb-4">July 2022 - Sep 2022</p>
             </div>
           </div>
 
-          <div class="flex pl-6 items-center gap-4 project_items">
-            <div class="aspect-video h-48 rounded-xl">
-              <a href="./projects/ideaportal.png" class="thumbnail3" title="">
-                <img src="./projects/ideaportal.png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/ideaportal (1).png" class="thumbnail3 d-none" title="">
-                <img src="./projects/ideaportal (1).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/ideaportal (2).png" class="thumbnail3 d-none" title="">
-                <img src="./projects/ideaportal (2).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/ideaportal (3).png" class="thumbnail3 d-none" title="">
-                <img src="./projects/ideaportal (3).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/ideaportal (4).png" class="thumbnail3 d-none" title="">
-                <img src="./projects/ideaportal (4).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/ideaportal (5).png" class="thumbnail3 d-none" title="">
-                <img src="./projects/ideaportal (5).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/ideaportal (6).png" class="thumbnail3 d-none" title="">
-                <img src="./projects/ideaportal (6).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/ideaportal (7).png" class="thumbnail3 d-none" title="">
-                <img src="./projects/ideaportal (7).png" alt="" class="img-fluid">
-              </a>
-            </div>
-            <div>
-              <h1 class="k2d font-bold tracking-wider text-xl glow">
-                Ideaportal Jmbaxi (Frontend - Backend)
-              </h1>
-              <h6>Contributed</h6>
-              <p>Feb 2023 - April 2023</p>
-            </div>
-          </div>
-
-          <div class="flex items-center gap-4 project_items">
-            <div class="w-full">
-              <h1
-                class="ml-auto w-fit k2d font-bold tracking-wider text-xl glow"
-              >
+          <div
+            class="project_item flex-shrink-0 w-80 bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 animate__animated animate__fadeIn animate__delay-3s"
+          >
+            <a href="./projects/pluspoint.png" class="thumbnail4" title="">
+              <img src="./projects/pluspoint.png" alt="" class="img-fluid" />
+            </a>
+            <a
+              href="./projects/pluspoint (1).png"
+              class="thumbnail4 d-none"
+              title=""
+            >
+              <img
+                src="./projects/pluspoint (1).png"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+            <a
+              href="./projects/pluspoint (2).png"
+              class="thumbnail4 d-none"
+              title=""
+            >
+              <img
+                src="./projects/pluspoint (2).png"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+            <a
+              href="./projects/pluspoint (3).png"
+              class="thumbnail4 d-none"
+              title=""
+            >
+              <img
+                src="./projects/pluspoint (3).png"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+            <a
+              href="./projects/pluspoint (4).png"
+              class="thumbnail4 d-none"
+              title=""
+            >
+              <img
+                src="./projects/pluspoint (4).png"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+            <a
+              href="./projects/pluspoint (5).png"
+              class="thumbnail4 d-none"
+              title=""
+            >
+              <img
+                src="./projects/pluspoint (5).png"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+            <div class="p-4">
+              <h2 class="font-bold text-xl mb-2">
                 Pluspoint Clasessapp (Frontend - Backend)
-              </h1>
-              <h6 class="ml-auto w-fit">Contributed</h6>
-              <p class="ml-auto w-fit">April 2023 - May 2023</p>
-            </div>
-            <div class="aspect-video h-48 rounded-xl">
-              <a href="./projects/pluspoint.png" class="thumbnail4" title="">
-                <img src="./projects/pluspoint.png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/pluspoint (1).png" class="thumbnail4 d-none" title="">
-                <img src="./projects/pluspoint (1).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/pluspoint (2).png" class="thumbnail4 d-none" title="">
-                <img src="./projects/pluspoint (2).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/pluspoint (3).png" class="thumbnail4 d-none" title="">
-                <img src="./projects/pluspoint (3).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/pluspoint (4).png" class="thumbnail4 d-none" title="">
-                <img src="./projects/pluspoint (4).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/pluspoint (5).png" class="thumbnail4 d-none" title="">
-                <img src="./projects/pluspoint (5).png" alt="" class="img-fluid">
-              </a>
+              </h2>
+              <h6 class="text-gray-400 mb-2">Contributed</h6>
+              <p class="text-gray-300 mb-4">April 2023 - May 2023</p>
             </div>
           </div>
 
-          <div class="flex pl-6 items-center gap-4 project_items">
-            <div class="aspect-video h-48 rounded-xl">
-              <a href="./projects/vivara (1).png" class="thumbnail5" title="">
-                <img src="./projects/vivara (1).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/vivara (2).png" class="thumbnail5 d-none" title="">
-                <img src="./projects/vivara (2).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/vivara (3).png" class="thumbnail5 d-none" title="">
-                <img src="./projects/vivara (3).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/vivara (4).png" class="thumbnail5 d-none" title="">
-                <img src="./projects/vivara (4).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/vivara (5).png" class="thumbnail5 d-none" title="">
-                <img src="./projects/vivara (5).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/vivara (6).png" class="thumbnail5 d-none" title="">
-                <img src="./projects/vivara (6).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/vivara (7).png" class="thumbnail5 d-none" title="">
-                <img src="./projects/vivara (7).png" alt="" class="img-fluid">
-              </a>
-              
+          <div
+            class="project_item flex-shrink-0 w-80 bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 animate__animated animate__fadeIn animate__delay-3s"
+          >
+            <a href="./projects/ideaportal.png" class="thumbnail3" title="">
+              <img src="./projects/ideaportal.png" alt="" class="img-fluid" />
+            </a>
+            <a
+              href="./projects/ideaportal (1).png"
+              class="thumbnail3 d-none"
+              title=""
+            >
+              <img
+                src="./projects/ideaportal (1).png"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+            <a
+              href="./projects/ideaportal (2).png"
+              class="thumbnail3 d-none"
+              title=""
+            >
+              <img
+                src="./projects/ideaportal (2).png"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+            <a
+              href="./projects/ideaportal (3).png"
+              class="thumbnail3 d-none"
+              title=""
+            >
+              <img
+                src="./projects/ideaportal (3).png"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+            <a
+              href="./projects/ideaportal (4).png"
+              class="thumbnail3 d-none"
+              title=""
+            >
+              <img
+                src="./projects/ideaportal (4).png"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+            <a
+              href="./projects/ideaportal (5).png"
+              class="thumbnail3 d-none"
+              title=""
+            >
+              <img
+                src="./projects/ideaportal (5).png"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+            <a
+              href="./projects/ideaportal (6).png"
+              class="thumbnail3 d-none"
+              title=""
+            >
+              <img
+                src="./projects/ideaportal (6).png"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+            <a
+              href="./projects/ideaportal (7).png"
+              class="thumbnail3 d-none"
+              title=""
+            >
+              <img
+                src="./projects/ideaportal (7).png"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+            <div class="p-4">
+              <h2 class="font-bold text-xl mb-2">
+                Ideaportal Jmbaxi (Frontend - Backend)
+              </h2>
+              <h6 class="text-gray-400 mb-2">Contributed</h6>
+              <p class="text-gray-300 mb-4">Feb 2023 - April 2023</p>
             </div>
-            <div>
-              <h1 class="k2d font-bold tracking-wider text-xl glow">
+          </div>
+
+          <div
+            class="project_item flex-shrink-0 w-80 bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 animate__animated animate__fadeIn animate__delay-3s"
+          >
+            <a href="./projects/vivara (1).png" class="thumbnail5" title="">
+              <img src="./projects/vivara (1).png" alt="" class="img-fluid" />
+            </a>
+            <a
+              href="./projects/vivara (2).png"
+              class="thumbnail5 d-none"
+              title=""
+            >
+              <img src="./projects/vivara (2).png" alt="" class="img-fluid" />
+            </a>
+            <a
+              href="./projects/vivara (3).png"
+              class="thumbnail5 d-none"
+              title=""
+            >
+              <img src="./projects/vivara (3).png" alt="" class="img-fluid" />
+            </a>
+            <a
+              href="./projects/vivara (4).png"
+              class="thumbnail5 d-none"
+              title=""
+            >
+              <img src="./projects/vivara (4).png" alt="" class="img-fluid" />
+            </a>
+            <a
+              href="./projects/vivara (5).png"
+              class="thumbnail5 d-none"
+              title=""
+            >
+              <img src="./projects/vivara (5).png" alt="" class="img-fluid" />
+            </a>
+            <a
+              href="./projects/vivara (6).png"
+              class="thumbnail5 d-none"
+              title=""
+            >
+              <img src="./projects/vivara (6).png" alt="" class="img-fluid" />
+            </a>
+            <a
+              href="./projects/vivara (7).png"
+              class="thumbnail5 d-none"
+              title=""
+            >
+              <img src="./projects/vivara (7).png" alt="" class="img-fluid" />
+            </a>
+            <div class="p-4">
+              <h2 class="font-bold text-xl mb-2">
                 Vivara-Zoho Books (Frontend - Backend)
-              </h1>
-              <h6>Scratch</h6>
-              <p>May 2023 - Sep 2023</p>
-            </div>
-
-          </div>
-
-          <div class="flex items-center gap-4 project_items">
-            <div class="w-full">
-              <h1
-                class="ml-auto w-fit k2d font-bold tracking-wider text-xl glow"
+              </h2>
+              <h6 class="text-gray-400 mb-2">Scratch</h6>
+              <p class="text-gray-300 mb-4">May 2023 - Sep 2023</p>
+              <a
+                href="https://github.com/Shady-shaikh/vivara"
+                target="_blank"
+                class="inline-block px-4 py-2 bg-yellow-400 text-gray-900 rounded-lg font-semibold"
+                title="View Project"
               >
-                Eureka-SAP System
-              </h1>
-              <h6 class="ml-auto w-fit">Scratch</h6>
-              <p class="ml-auto w-fit">Sep 2023 - April 2024</p>
-            </div>
-            <div class="aspect-video h-48 rounded-xl">
-              <a href="./projects/eureka (1).png" class="thumbnail6" title="">
-                <img src="./projects/eureka (1).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/eureka (2).png" class="thumbnail6 d-none" title="">
-                <img src="./projects/eureka (2).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/eureka (3).png" class="thumbnail6 d-none" title="">
-                <img src="./projects/eureka (3).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/eureka (4).png" class="thumbnail6 d-none" title="">
-                <img src="./projects/pluspoint (3).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/eureka (5).png" class="thumbnail6 d-none" title="">
-                <img src="./projects/eureka (5).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/eureka (6).png" class="thumbnail6 d-none" title="">
-                <img src="./projects/eureka (6).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/eureka (7).png" class="thumbnail6 d-none" title="">
-                <img src="./projects/eureka (7).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/eureka (8).png" class="thumbnail6 d-none" title="">
-                <img src="./projects/eureka (8).png" alt="" class="img-fluid">
+                View Project
               </a>
             </div>
           </div>
 
-          <div class="flex pl-6 items-center gap-4 project_items">
-            <div class="aspect-video h-48 rounded-xl">
-              <a href="./projects/eurekaapp (1).png" class="thumbnail7" title="">
-                <img src="./projects/eurekaapp (1).png" alt="" class="img-fluid">
+          <div
+            class="project_item flex-shrink-0 w-80 bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 animate__animated animate__fadeIn animate__delay-3s"
+          >
+            <a href="./projects/eureka (1).png" class="thumbnail6" title="">
+              <img src="./projects/eureka (1).png" alt="" class="img-fluid" />
+            </a>
+            <a
+              href="./projects/eureka (2).png"
+              class="thumbnail6 d-none"
+              title=""
+            >
+              <img src="./projects/eureka (2).png" alt="" class="img-fluid" />
+            </a>
+            <a
+              href="./projects/eureka (3).png"
+              class="thumbnail6 d-none"
+              title=""
+            >
+              <img src="./projects/eureka (3).png" alt="" class="img-fluid" />
+            </a>
+            <a
+              href="./projects/eureka (4).png"
+              class="thumbnail6 d-none"
+              title=""
+            >
+              <img
+                src="./projects/pluspoint (3).png"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+            <a
+              href="./projects/eureka (5).png"
+              class="thumbnail6 d-none"
+              title=""
+            >
+              <img src="./projects/eureka (5).png" alt="" class="img-fluid" />
+            </a>
+            <a
+              href="./projects/eureka (6).png"
+              class="thumbnail6 d-none"
+              title=""
+            >
+              <img src="./projects/eureka (6).png" alt="" class="img-fluid" />
+            </a>
+            <a
+              href="./projects/eureka (7).png"
+              class="thumbnail6 d-none"
+              title=""
+            >
+              <img src="./projects/eureka (7).png" alt="" class="img-fluid" />
+            </a>
+            <a
+              href="./projects/eureka (8).png"
+              class="thumbnail6 d-none"
+              title=""
+            >
+              <img src="./projects/eureka (8).png" alt="" class="img-fluid" />
+            </a>
+            <div class="p-4">
+              <h2 class="font-bold text-xl mb-2">Eureka-SAP System</h2>
+              <h6 class="text-gray-400 mb-2">Scratch</h6>
+              <p class="text-gray-300 mb-4">Sep 2023 - April 2024</p>
+              <a
+                href="https://github.com/Shady-shaikh/eureka"
+                target="_blank"
+                class="inline-block px-4 py-2 bg-yellow-400 text-gray-900 rounded-lg font-semibold"
+                title="View Project"
+              >
+                View Project
               </a>
-              <a href="./projects/eurekaapp (2).png" class="thumbnail7 d-none" title="">
-                <img src="./projects/eurekaapp (2).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/eurekaapp (3).png" class="thumbnail7 d-none" title="">
-                <img src="./projects/eurekaapp (3).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/eurekaapp (4).png" class="thumbnail7 d-none" title="">
-                <img src="./projects/eurekaapp (4).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/eurekaapp (5).png" class="thumbnail7 d-none" title="">
-                <img src="./projects/eurekaapp (5).png" alt="" class="img-fluid">
-              </a>
-              <a href="./projects/eurekaapp (6).png" class="thumbnail7 d-none" title="">
-                <img src="./projects/eurekaapp (6).png" alt="" class="img-fluid">
-              </a>
-              
             </div>
-            <div>
-              <h1 class="k2d font-bold tracking-wider text-xl glow">
-                Eureka App (Flutter)
-              </h1>
-              <h6>Scratch</h6>
-              <p>April 2024 - May 2024</p>
-            </div>
-
           </div>
-
+          <!-- Add more project items similarly -->
         </div>
 
-        <svg
-          class="hidden md:block cross-spin glow-el -z-10 project_items absolute -right-24 top-1/3"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-        >
-          <g
-            id="Page-1"
-            stroke="none"
-            stroke-width="1"
-            fill="none"
-            fill-rule="evenodd"
-            sketch:type="MSPage"
-          >
-            <g
-              id="Icon-Set-Filled"
-              sketch:type="MSLayerGroup"
-              transform="translate(-469.000000, -1041.000000)"
-              fill="#ffffff"
-            >
-              <path
-                d="M487.148,1053.48 L492.813,1047.82 C494.376,1046.26 494.376,1043.72 492.813,1042.16 C491.248,1040.59 488.712,1040.59 487.148,1042.16 L481.484,1047.82 L475.82,1042.16 C474.257,1040.59 471.721,1040.59 470.156,1042.16 C468.593,1043.72 468.593,1046.26 470.156,1047.82 L475.82,1053.48 L470.156,1059.15 C468.593,1060.71 468.593,1063.25 470.156,1064.81 C471.721,1066.38 474.257,1066.38 475.82,1064.81 L481.484,1059.15 L487.148,1064.81 C488.712,1066.38 491.248,1066.38 492.813,1064.81 C494.376,1063.25 494.376,1060.71 492.813,1059.15 L487.148,1053.48"
-                id="cross"
-                sketch:type="MSShapeGroup"
-              ></path>
-            </g>
-          </g>
-        </svg>
-        <svg
-          class="hidden sm:block cross-spin glow-el -z-10 project_items absolute left-1/8 top-2/3"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-        >
-          <g
-            id="Page-1"
-            stroke="none"
-            stroke-width="1"
-            fill="none"
-            fill-rule="evenodd"
-            sketch:type="MSPage"
-          >
-            <g
-              id="Icon-Set-Filled"
-              sketch:type="MSLayerGroup"
-              transform="translate(-469.000000, -1041.000000)"
-              fill="#ffffff"
-            >
-              <path
-                d="M487.148,1053.48 L492.813,1047.82 C494.376,1046.26 494.376,1043.72 492.813,1042.16 C491.248,1040.59 488.712,1040.59 487.148,1042.16 L481.484,1047.82 L475.82,1042.16 C474.257,1040.59 471.721,1040.59 470.156,1042.16 C468.593,1043.72 468.593,1046.26 470.156,1047.82 L475.82,1053.48 L470.156,1059.15 C468.593,1060.71 468.593,1063.25 470.156,1064.81 C471.721,1066.38 474.257,1066.38 475.82,1064.81 L481.484,1059.15 L487.148,1064.81 C488.712,1066.38 491.248,1066.38 492.813,1064.81 C494.376,1063.25 494.376,1060.71 492.813,1059.15 L487.148,1053.48"
-                id="cross"
-                sketch:type="MSShapeGroup"
-              ></path>
-            </g>
-          </g>
-        </svg>
         <div
-          class="absolute h-48 polka_dots left-1/8 top-1/4 -z-10 rotate-90 aspect-video"
-        ></div>
-        <div
-          class="absolute h-64 polka_dots right-48 opacity-50 bottom-1/4 -z-10 aspect-video"
-        ></div>
+          class="text-center mt-8 mb-4 animate__animated animate__fadeIn animate__delay-6s"
+        >
+          <a
+            href="https://github.com/Shady-shaikh"
+            target="_blank"
+            class="text-yellow-400 underline"
+            >See More Projects on GitHub</a
+          >
+        </div>
       </div>
     </div>
-    <!--Contact Section-->
-    <div class="app-container relative" id="contact">
-      <div class="container mx-auto mt-16">
+
+    <!-- Contact Section -->
+    <div class="bg-gray-900 text-white py-16" id="contact">
+      <div class="container mx-auto px-4">
         <h1
-          class="k2d font-bold w-fit mx-auto text-5xl tracking-wider contact_load"
+          class="text-5xl font-bold tracking-wider text-center mb-8 contact_load animate__animated animate__fadeIn"
         >
           Contact Me
         </h1>
-        <br>
-        <div class=" tracking-wider contact_load flex align-items-center justify-content-center">
-            <p class="ml-4 mb-2">usashaikh86@gmail.com</p>
-            <p class="ml-4 mb-2">9136393967</p>
-          </div>
-          <p class="text-center">Thane, Mumbai</p>         
-      </div>
 
-      <div
-        class="flex justify-center text-xs items-center absolute bottom-0 opacity-15 border-t w-full h-16"
-      >
-        <p>
-          Design by Usama Shaikh &copy;2024
-        </p>
+        <div
+          class="flex flex-col items-center justify-center gap-4 contact_load animate__animated animate__fadeIn animate__delay-1s"
+        >
+          <p class="text-lg">
+            Email:
+            <a
+              href="mailto:usashaikh86@gmail.com"
+              class="text-blue-500 hover:underline transition duration-300"
+            >
+              usashaikh86@gmail.com
+            </a>
+          </p>
+          <p class="text-lg">
+            Phone:
+            <a
+              href="tel:+919136393967"
+              class="text-blue-500 hover:underline transition duration-300"
+            >
+              9136393967
+            </a>
+          </p>
+          <p class="text-lg">Location: Thane, Mumbai</p>
+        </div>
       </div>
-      
     </div>
 
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-6 relative overflow-hidden">
+      <div class="container mx-auto text-center">
+        <p
+          class="text-sm mb-4 animate__animated animate__fadeIn animate__delay-2s"
+        >
+          Design by Usama Shaikh &copy; 2024
+        </p>
+        <div class="flex justify-center space-x-4 mb-4">
+          <a
+            href="https://github.com/Shady-shaikh"
+            class="text-yellow-400 hover:underline transition duration-300"
+            target="_blank"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/usama-shaikh-81294a306"
+            class="text-yellow-400 hover:underline transition duration-300"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a
+            href="https://drive.google.com/file/d/1Fhol2HvsZHggz6B5NBCtBe3XlFIA0zOw/view"
+            class="text-yellow-400 hover:underline transition duration-300"
+            target="_blank"
+            download
+            >Download Resume</a
+          >
+        </div>
+      </div>
+      <div
+        class="absolute top-0 left-0 w-1/2 h-full bg-yellow-300 opacity-20 blur-3xl"
+      ></div>
+      <div
+        class="absolute bottom-0 right-0 w-1/2 h-full bg-yellow-400 opacity-10 blur-3xl"
+      ></div>
+    </footer>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Scroll to Top Button -->
+    <button
+      id="scrollToTopBtn"
+      class="fixed bottom-4 right-4 bg-yellow-400 text-gray-800 p-3 rounded-full shadow-lg hover:bg-yellow-300 transition-transform transform-gpu hover:scale-105"
+    >
+      &#8679;
+    </button>
 
+    <script>
+      const typingText = document.getElementById("typing-text");
+      const words = [
+        "Software Developer",
+        "PHP Developer",
+        "Backend Developer",
+      ];
+      let wordIndex = 0;
+      let isDeleting = false;
+      let typingSpeed = 110;
+
+      function type() {
+        const currentWord = words[wordIndex];
+        if (!isDeleting) {
+          typingText.innerHTML = currentWord.substring(
+            0,
+            typingText.innerHTML.length + 1
+          );
+          if (typingText.innerHTML === currentWord) {
+            isDeleting = true;
+            typingSpeed = 200; // Pause before deleting
+          }
+        } else {
+          typingText.innerHTML = currentWord.substring(
+            0,
+            typingText.innerHTML.length - 1
+          );
+          if (typingText.innerHTML === "") {
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+            typingSpeed = 150;
+          }
+        }
+        setTimeout(type, typingSpeed);
+      }
+
+      document.addEventListener("DOMContentLoaded", () =>
+        setTimeout(type, typingSpeed)
+      );
+    </script>
+    <!-- JavaScript to toggle mobile menu -->
+    <script>
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          const menu = document.getElementById("mobile-menu");
+          menu.classList.toggle("hidden");
+        });
+    </script>
+    <!-- Scroll to Top Button Script -->
+    <script>
+      // Show/Hide the button on scroll
+      window.addEventListener("scroll", function () {
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        if (window.scrollY > 300) {
+          // Adjust this value based on when you want the button to appear
+          scrollToTopBtn.classList.add("block");
+        } else {
+          scrollToTopBtn.classList.remove("block");
+        }
+      });
+
+      // Scroll to top on button click
+      document
+        .getElementById("scrollToTopBtn")
+        .addEventListener("click", function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="./index.js"></script>
