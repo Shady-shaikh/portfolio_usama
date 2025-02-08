@@ -31,11 +31,32 @@
     >
       <!-- Navigation Bar -->
       <nav
-        class="fixed top-0 left-0 w-full bg-opacity-90 backdrop-blur-lg py-4 shadow-md z-30"
+        style="
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background: rgba(31, 41, 55, 0.7);
+          backdrop-filter: blur(10px);
+          padding: 15px 0;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+          z-index: 1000;
+          transition: all 0.3s ease-in-out;
+        "
       >
         <div class="container mx-auto flex justify-between items-center px-6">
-          <a href="#hero" class="text-2xl font-bold tracking-wider"
-            >Abu Osama</a
+          <a
+            href="#hero"
+            style="
+              font-size: 1.8rem;
+              font-weight: bold;
+              color: white;
+              text-decoration: none;
+              transition: color 0.3s ease-in-out;
+            "
+            onmouseover="this.style.color='#facc15'"
+            onmouseout="this.style.color='white'"
+            >Abu Osama Shaikh</a
           >
 
           <!-- Hamburger Icon for Mobile -->
@@ -118,9 +139,9 @@
           <p
             class="text-lg md:text-xl font-light max-w-lg mx-auto md:mx-0 fade-in"
           >
-            With over three years of experience, I specialize in building dynamic
-            and scalable web applications. Passionate about technology and
-            dedicated to delivering high-quality software.
+            With over three years of experience, I specialize in building
+            dynamic and scalable web applications. Passionate about technology
+            and dedicated to delivering high-quality software.
           </p>
 
           <!-- Buttons with Fade-in -->
@@ -130,30 +151,73 @@
             <a
               href="https://github.com/Shady-shaikh"
               target="_blank"
-              class="px-4 py-2 bg-yellow-500 text-gray-900 rounded-lg text-sm font-semibold hover:bg-yellow-400 transition-colors"
+              style="
+                padding: 12px 24px;
+                background: #facc15;
+                color: #1f2937;
+                font-weight: bold;
+                text-decoration: none;
+                border-radius: 8px;
+                transition: transform 0.3s ease-in-out;
+              "
+              onmouseover="this.style.transform='scale(1.1)'"
+              onmouseout="this.style.transform='scale(1)'"
               >GitHub</a
             >
             <a
               href="https://www.linkedin.com/in/usama-shaikh-81294a306"
               target="_blank"
-              class="px-4 py-2 bg-yellow-500 text-gray-900 rounded-lg text-sm font-semibold hover:bg-yellow-400 transition-colors"
+              style="
+                padding: 12px 24px;
+                background: #3b82f6;
+                color: white;
+                font-weight: bold;
+                text-decoration: none;
+                border-radius: 8px;
+                transition: transform 0.3s ease-in-out;
+              "
+              onmouseover="this.style.transform='scale(1.1)'"
+              onmouseout="this.style.transform='scale(1)'"
               >LinkedIn</a
             >
             <a
               href="https://drive.google.com/file/d/19_6cYCec5wBdPzwGRBoND_zClXir6NoN/view"
               target="_blank"
-              class="px-4 py-2 bg-yellow-500 text-gray-900 rounded-lg text-sm font-semibold hover:bg-yellow-400 transition-colors"
+              style="
+                padding: 12px 24px;
+                background: #22c55e;
+                color: white;
+                font-weight: bold;
+                text-decoration: none;
+                border-radius: 8px;
+                transition: transform 0.3s ease-in-out;
+              "
+              onmouseover="this.style.transform='scale(1.1)'"
+              onmouseout="this.style.transform='scale(1)'"
               >Download Resume</a
             >
           </div>
         </div>
 
         <!-- Image Section with Fade-in -->
-        <div class="md:w-1/2 mt-8 md:mt-0 fade-in">
+        <div
+          style="
+            position: relative;
+            width: 270px;
+            height: 270px;
+            margin: auto;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #facc15;
+            transition: transform 0.3s ease-in-out;
+          "
+          onmouseover="this.style.transform='scale(1.05)'"
+          onmouseout="this.style.transform='scale(1)'"
+        >
           <img
             src="./imgs/head.jpeg"
             alt="Profile Picture"
-            class="rounded-full shadow-lg w-50 h-68 object-cover mx-auto md:mx-0"
+            style="width: 100%; height: 100%; object-fit: cover"
           />
         </div>
       </div>
@@ -161,76 +225,138 @@
 
     <!-- About Section -->
     <div
-      class="app-container relative min-h-screen bg-gradient-to-r from-gray-800 to-gray-900 text-white"
       id="about"
+      style="
+        position: relative;
+        min-height: 100vh;
+        background: linear-gradient(to right, #1f2937, #111827);
+        color: white;
+        overflow: hidden;
+        padding: 80px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+      "
     >
-      <!-- Container -->
-      <div class="container mx-auto px-6 py-12">
-        <!-- Heading with Animation -->
-        <div class="text-center mb-12 relative z-20">
-          <h1 class="text-5xl md:text-6xl font-bold tracking-wider fade-in">
-            About <span class="text-yellow-400">Me</span>
-          </h1>
+      <!-- Image Section (Left) -->
+      <div
+        style="
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <div
+          style="
+            position: relative;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid transparent;
+            padding: 5px;
+            background: linear-gradient(45deg, yellow, transparent, yellow);
+            animation: rotate-border 4s linear infinite;
+          "
+        >
+          <img
+            src="https://images.unsplash.com/photo-1610438250910-01cb769c1334?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDkwOTcxOTd8&ixlib=rb-4.0.3&q=1"
+            alt="Profile Picture"
+            style="
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: transform 0.5s ease-in-out;
+            "
+            onmouseover="this.style.transform='scale(1.1)'"
+            onmouseout="this.style.transform='scale(1)'"
+          />
         </div>
+      </div>
 
-        <!-- Image and Text Section -->
-        <div class="flex flex-col md:flex-row items-center justify-center">
-          <!-- Image Section with Hover Effect -->
-          <div
-            class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 mb-8 md:mb-0 relative group"
+      <!-- Text Content (Right) -->
+      <div
+        style="
+          flex: 1.5;
+          max-width: 600px;
+          background: rgba(31, 41, 55, 0.9);
+          padding: 30px;
+          border-radius: 10px;
+          animation: fadeInUp 1s ease-in-out;
+        "
+      >
+        <h1
+          style="
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: white;
+          "
+        >
+          About <span style="color: #facc15">Me</span>
+        </h1>
+        <p
+          id="typing-effect"
+          style="
+            font-size: 1.2rem;
+            color: #d1d5db;
+            margin-top: 10px;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid yellow;
+            width: 0;
+            display: inline-block;
+          "
+        ></p>
+
+        <p style="font-size: 1.1rem; line-height: 1.6; margin-top: 15px">
+          I am a highly skilled
+          <span style="color: #facc15; font-weight: bold"
+            >Full-Stack Developer</span
           >
-            <div
-              class="flex drop-shadow-xl rounded-full overflow-hidden aspect-square w-full max-w-xl mx-auto"
-            >
-              <img
-                id="abt-img"
-                src="https://images.unsplash.com/photo-1610438250910-01cb769c1334?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDkwOTcxOTd8&ixlib=rb-4.0.3&q=1"
-                alt="Profile Picture"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-            </div>
-            <div
-              class="absolute bottom-4 left-4 w-20 h-20 bg-yellow-400 rounded-full opacity-30 animate-pulse"
-            ></div>
-          </div>
-
-          <!-- About Content with Fade-in -->
-          <div
-            class="flex-1 w-full md:w-1/2 lg:w-2/3 p-6 drop-shadow-xl rounded-xl backdrop-blur-lg bg-gray-800 bg-opacity-70 fade-in"
+          with expertise in PHP (Laravel, CodeIgniter, Yii2, Symfony) and
+          Node.js (Express, Mongoose, Firebase), specializing in building
+          scalable web applications. With a strong background in backend
+          development, database optimization, and API integrations, I have
+          successfully enhanced project efficiency and automation.
+        </p>
+        <p style="font-size: 1.1rem; line-height: 1.6; margin-top: 15px">
+          I have led teams and optimized project workflows, achieving a
+          <span style="color: #facc15; font-weight: bold">30% reduction</span>
+          in bottlenecks through improved code structure and database query
+          optimizations. My experience includes working with AWS (S3), Git,
+          Vapor, Zoho Books, and Zoho Inventory, ensuring seamless deployment
+          and financial management solutions.
+        </p>
+        <p style="font-size: 1.1rem; line-height: 1.6; margin-top: 15px">
+          Additionally, I have developed email verification systems, automated
+          queue-based job scheduling, and built timer-based task execution
+          systems, significantly improving processing efficiency. My work on
+          <span style="color: #facc15; font-weight: bold"
+            >payment gateway integrations</span
           >
-            <p class="text-lg leading-relaxed mb-4">
-              Hi, I'm Abu Osama, a dedicated Software Developer with extensive
-              experience in PHP development. I've worked on a range of projects,
-              including SAP systems, billing solutions, school management
-              systems, e-commerce platforms, content management systems (CMS),
-              and various API-based projects.
-            </p>
-            <p class="text-lg leading-relaxed mb-4">
-              I also have a background in mobile app development, having created
-              both offline and online applications using Flutter and Android
-              Studio. I am passionate about delivering high-quality software
-              that makes a difference.
-            </p>
-            <p class="text-lg leading-relaxed">
-              Beyond coding, I enjoy staying updated with the latest
-              advancements in technology and contributing to open-source
-              projects.
-            </p>
-          </div>
-        </div>
-
-        <!-- Background Effects with Animation -->
-        <div class="absolute inset-0 -z-10 overflow-hidden">
-          <div
-            class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-gray-900 to-transparent opacity-30"
-          ></div>
-          <div
-            class="absolute top-1/4 -left-16 w-1/2 h-1/2 bg-yellow-300 rounded-full blur-3xl opacity-10 animate-pulse"
-          ></div>
-          <div
-            class="absolute top-1/2 -right-64 w-1/2 h-1/2 bg-yellow-400 rounded-full blur-3xl opacity-20 animate-pulse"
-          ></div>
-        </div>
+          (PayU Money, Razorpay) has enhanced transaction efficiency by 15%.
+        </p>
+        <p style="font-size: 1.1rem; line-height: 1.6; margin-top: 15px">
+          Beyond backend expertise, I have built cross-platform applications
+          using
+          <span style="color: #facc15; font-weight: bold"
+            >Flutter, Dart, and Ionic Cordova</span
+          >, improving mobile accessibility and processing speeds. My
+          contribution to data visualization projects using graphs and analytics
+          in Symfony-based applications has provided businesses with deeper
+          insights into their data.
+        </p>
+        <p style="font-size: 1.1rem; line-height: 1.6; margin-top: 15px">
+          Passionate about
+          <span style="color: #facc15; font-weight: bold">problem-solving</span>
+          and
+          <span style="color: #facc15; font-weight: bold">optimization</span>, I
+          thrive in fast-paced environments and continuously seek to enhance
+          system performance, automation, and scalability.
+        </p>
       </div>
     </div>
 
@@ -252,29 +378,41 @@
         <ul class="flex flex-wrap justify-center gap-4 mb-12">
           <li>
             <button
-              class="border border-yellow-400 px-4 py-2 rounded-full transition-colors duration-300 hover:bg-yellow-400 hover:text-gray-900"
+              class="relative px-6 py-3 rounded-full border border-yellow-400 text-yellow-400 font-semibold text-lg tracking-wide overflow-hidden bg-transparent backdrop-blur-md shadow-lg transition-all duration-500 ease-in-out hover:bg-yellow-400 hover:shadow-yellow-500/50 group"
             >
+              <span
+                class="absolute inset-0 w-0 bg-white opacity-30 transition-all duration-500 group-hover:w-full"
+              ></span>
               Web Development
             </button>
           </li>
           <li>
             <button
-              class="border border-yellow-400 px-4 py-2 rounded-full transition-colors duration-300 hover:bg-yellow-400 hover:text-gray-900"
+              class="relative px-6 py-3 rounded-full border border-yellow-400 text-yellow-400 font-semibold text-lg tracking-wide overflow-hidden bg-transparent backdrop-blur-md shadow-lg transition-all duration-500 ease-in-out hover:bg-yellow-400 hover:shadow-yellow-500/50 group"
             >
+              <span
+                class="absolute inset-0 w-0 bg-white opacity-30 transition-all duration-500 group-hover:w-full"
+              ></span>
               PHP Development
             </button>
           </li>
           <li>
             <button
-              class="border border-yellow-400 px-4 py-2 rounded-full transition-colors duration-300 hover:bg-yellow-400 hover:text-gray-900"
+              class="relative px-6 py-3 rounded-full border border-yellow-400 text-yellow-400 font-semibold text-lg tracking-wide overflow-hidden bg-transparent backdrop-blur-md shadow-lg transition-all duration-500 ease-in-out hover:bg-yellow-400 hover:shadow-yellow-500/50 group"
             >
+              <span
+                class="absolute inset-0 w-0 bg-white opacity-30 transition-all duration-500 group-hover:w-full"
+              ></span>
               API Development
             </button>
           </li>
           <li>
             <button
-              class="border border-yellow-400 px-4 py-2 rounded-full transition-colors duration-300 hover:bg-yellow-400 hover:text-gray-900"
+              class="relative px-6 py-3 rounded-full border border-yellow-400 text-yellow-400 font-semibold text-lg tracking-wide overflow-hidden bg-transparent backdrop-blur-md shadow-lg transition-all duration-500 ease-in-out hover:bg-yellow-400 hover:shadow-yellow-500/50 group"
             >
+              <span
+                class="absolute inset-0 w-0 bg-white opacity-30 transition-all duration-500 group-hover:w-full"
+              ></span>
               Software Development
             </button>
           </li>
@@ -288,190 +426,242 @@
           <!-- Repeat for each skill item -->
           <!-- Skill Item -->
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
-            <img src="./imgs/php.png" alt="PHP" class="w-16 h-16 mb-2" />
+            <img
+              src="./imgs/php.png"
+              alt="PHP"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
+            />
             <p class="text-lg font-semibold">PHP</p>
           </div>
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
-            <img src="./imgs/database.png" alt="SQL" class="w-16 h-16 mb-2" />
+            <img
+              src="./imgs/database.png"
+              alt="SQL"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
+            />
             <p class="text-lg font-semibold">SQL</p>
           </div>
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
             <img
               src="./imgs/laravel.png"
               alt="Laravel"
-              class="w-16 h-16 mb-2"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
             />
             <p class="text-lg font-semibold">Laravel</p>
           </div>
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
-            <img src="./imgs/ci.png" alt="Codeigniter" class="w-16 h-16 mb-2" />
+            <img
+              src="./imgs/ci.png"
+              alt="Codeigniter"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
+            />
             <p class="text-lg font-semibold">Codeigniter</p>
           </div>
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
-            <img src="./imgs/yii2.png" alt="Yii2" class="w-16 h-16 mb-2" />
+            <img
+              src="./imgs/yii2.png"
+              alt="Yii2"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
+            />
             <p class="text-lg font-semibold">Yii2</p>
           </div>
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
-            <img src="./imgs/json-file.png" alt="JSON" class="w-16 h-16 mb-2" />
+            <img
+              src="./imgs/json-file.png"
+              alt="JSON"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
+            />
             <p class="text-lg font-semibold">JSON</p>
           </div>
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
-            <img src="./imgs/js.png" alt="JavaScript" class="w-16 h-16 mb-2" />
+            <img
+              src="./imgs/js.png"
+              alt="JavaScript"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
+            />
             <p class="text-lg font-semibold">JavaScript</p>
           </div>
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
             <img
               src="./imgs/web.png"
               alt="Jquery/Ajax"
-              class="w-16 h-16 mb-2"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
             />
             <p class="text-lg font-semibold">jQuery/Ajax</p>
           </div>
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
-            <img src="./imgs/java.png" alt="Java" class="w-16 h-16 mb-2" />
+            <img
+              src="./imgs/java.png"
+              alt="Java"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
+            />
             <p class="text-lg font-semibold">Java</p>
           </div>
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
             <img
               src="./imgs/android.png"
               alt="Android Studio"
-              class="w-16 h-16 mb-2"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
             />
             <p class="text-lg font-semibold">Android Studio</p>
           </div>
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
-            <img src="./imgs/html.png" alt="HTML" class="w-16 h-16 mb-2" />
+            <img
+              src="./imgs/html.png"
+              alt="HTML"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
+            />
             <p class="text-lg font-semibold">HTML</p>
           </div>
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
-            <img src="./imgs/css-3.png" alt="CSS" class="w-16 h-16 mb-2" />
+            <img
+              src="./imgs/css-3.png"
+              alt="CSS"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
+            />
             <p class="text-lg font-semibold">CSS</p>
           </div>
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
             <img
               src="./imgs/postman.png"
               alt="POSTMAN"
-              class="w-16 h-16 mb-2"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
             />
             <p class="text-lg font-semibold">POSTMAN</p>
           </div>
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
-            <img src="./imgs/api.png" alt="API" class="w-16 h-16 mb-2" />
+            <img
+              src="./imgs/api.png"
+              alt="API"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
+            />
             <p class="text-lg font-semibold">API</p>
           </div>
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
             <img
               src="./imgs/firebase.png"
               alt="Firebase"
-              class="w-16 h-16 mb-2"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
             />
             <p class="text-lg font-semibold">Firebase</p>
           </div>
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
-            <img src="./imgs/sqlite.png" alt="SQLite" class="w-16 h-16 mb-2" />
+            <img
+              src="./imgs/sqlite.png"
+              alt="SQLite"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
+            />
             <p class="text-lg font-semibold">SQLite</p>
           </div>
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
-            <img src="./imgs/letter-c.png" alt="C/C++" class="w-16 h-16 mb-2" />
+            <img
+              src="./imgs/letter-c.png"
+              alt="C/C++"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
+            />
             <p class="text-lg font-semibold">C/C++</p>
           </div>
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
             <img
               src="./imgs/zohobooks.png"
               alt="Zoho Books"
-              class="w-16 h-16 mb-2"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
             />
             <p class="text-lg font-semibold">Zoho Books</p>
           </div>
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
             <img
               src="./imgs/flutter.jpg"
               alt="Flutter"
-              class="w-16 h-16 mb-2"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
             />
             <p class="text-lg font-semibold">Flutter</p>
           </div>
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
-            <img src="./imgs/dart.png" alt="Dart" class="w-16 h-16 mb-2" />
+            <img
+              src="./imgs/dart.png"
+              alt="Dart"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
+            />
             <p class="text-lg font-semibold">Dart</p>
           </div>
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
             <img
               src="./imgs/node-js.png"
               alt="Node.js"
-              class="w-16 h-16 mb-2"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
             />
             <p class="text-lg font-semibold">Node.js</p>
           </div>
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
             <img
               src="./imgs/express-js.png"
               alt="Express.js"
-              class="w-16 h-16 mb-2"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
             />
             <p class="text-lg font-semibold">Express.js</p>
           </div>
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
             <img
               src="./imgs/mongo-db.png"
               alt="MongoDB"
-              class="w-16 h-16 mb-2"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
             />
             <p class="text-lg font-semibold">MongoDB</p>
           </div>
           <div
-            class="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
           >
             <img
               src="./imgs/symfony.png"
               alt="Symfony"
-              class="w-16 h-16 mb-2"
+              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
             />
             <p class="text-lg font-semibold">Symfony</p>
           </div>
@@ -879,59 +1069,202 @@
         </div>
       </div>
     </div>
-
     <!-- Contact Section -->
-    <div class="bg-gray-900 text-white py-16" id="contact">
-      <div class="container mx-auto px-4">
+    <div
+      class="relative bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 px-6"
+      id="contact"
+    >
+      <div class="container mx-auto max-w-2xl text-center">
         <h1
-          class="text-5xl font-bold tracking-wider text-center mb-8 contact_load animate__animated animate__fadeIn"
+          class="text-5xl font-bold tracking-wider mb-6 animate__animated animate__fadeInDown"
         >
           Contact Me
         </h1>
-
-        <div
-          class="flex flex-col items-center justify-center gap-4 contact_load animate__animated animate__fadeIn animate__delay-1s"
+        <p
+          class="text-lg mb-8 animate__animated animate__fadeIn animate__delay-1s"
         >
+          Let's connect! Feel free to reach out via email, phone, or social
+          media.
+        </p>
+
+        <!-- Contact Form -->
+        <form id="contactForm" class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <div class="mb-4">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              class="w-full p-3 rounded-lg bg-gray-700 text-white"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              class="w-full p-3 rounded-lg bg-gray-700 text-white"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message"
+              rows="4"
+              class="w-full p-3 rounded-lg bg-gray-700 text-white"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            id="submitBtn"
+            class="w-full py-3 bg-yellow-400 text-gray-900 font-bold rounded-lg hover:bg-yellow-500 transition"
+          >
+            Send Message
+          </button>
+          <div id="loader" class="loader" style="display: none">Sending...</div>
+          <p id="statusMessage" class="text-white mt-3"></p>
+        </form>
+
+        <p
+          id="successMessage"
+          style="display: none; color: green; margin-top: 10px"
+        >
+          Your message has been sent successfully!
+        </p>
+
+        <!-- Contact Info & Socials -->
+        <div class="mt-8">
           <p class="text-lg">
             Email:
             <a
               href="mailto:usashaikh86@gmail.com"
-              class="text-blue-500 hover:underline transition duration-300"
+              class="text-yellow-400 hover:underline"
+              >usashaikh86@gmail.com</a
             >
-              usashaikh86@gmail.com
-            </a>
           </p>
           <p class="text-lg">
             Phone:
-            <a
-              href="tel:+919136393967"
-              class="text-blue-500 hover:underline transition duration-300"
+            <a href="tel:+919136393967" class="text-yellow-400 hover:underline"
+              >9136393967</a
             >
-              9136393967
-            </a>
           </p>
           <p class="text-lg">Location: Thane, Mumbai</p>
+
+          <!-- Social Links -->
+          <div class="mt-4 flex justify-center gap-4">
+            <a href="#" class="text-2xl hover:text-yellow-400 transition"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="#" class="text-2xl hover:text-yellow-400 transition"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="#" class="text-2xl hover:text-yellow-400 transition"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Footer Section -->
-    <footer class="bg-gray-900 text-white py-6 relative overflow-hidden">
-      <div class="container mx-auto text-center">
-        <p
-          class="text-sm mb-4 animate__animated animate__fadeIn animate__delay-2s"
-        >
-          Design by Usama Shaikh &copy; 2024
+    <footer
+      class="relative bg-gray-900 text-white py-8 text-center overflow-hidden"
+    >
+      <div class="container mx-auto">
+        <p class="text-sm mb-2">
+          &copy; 2024 Usama Shaikh. All rights reserved.
         </p>
-        
+
+        <!-- Quick Links -->
+        <div class="flex justify-center gap-6 text-sm">
+          <a href="#about" class="hover:text-yellow-400 transition">About</a>
+          <a href="#projects" class="hover:text-yellow-400 transition"
+            >Projects</a
+          >
+          <a href="#contact" class="hover:text-yellow-400 transition"
+            >Contact</a
+          >
+        </div>
+
+        <!-- Social Icons -->
+        <div class="mt-4 flex justify-center gap-4">
+          <a href="#" class="text-2xl hover:text-yellow-400 transition"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="#" class="text-2xl hover:text-yellow-400 transition"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="#" class="text-2xl hover:text-yellow-400 transition"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
       </div>
+
+      <!-- Animated Background Effects -->
       <div
-        class="absolute top-0 left-0 w-1/2 h-full bg-yellow-300 opacity-20 blur-3xl"
+        class="absolute top-0 left-0 w-1/3 h-full bg-yellow-300 opacity-20 blur-3xl animate-pulse"
       ></div>
       <div
-        class="absolute bottom-0 right-0 w-1/2 h-full bg-yellow-400 opacity-10 blur-3xl"
+        class="absolute bottom-0 right-0 w-1/3 h-full bg-yellow-400 opacity-10 blur-3xl animate-pulse"
       ></div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script>
+      (function () {
+        emailjs.init("D731Kr6UTDxa7-QVb"); // Replace with your EmailJS Public Key
+      })();
+
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          // Show loader
+          document.getElementById("loader").style.display = "block";
+          document.getElementById("submitBtn").disabled = true;
+
+          // Collect form data
+          let formData = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            message: document.getElementById("message").value,
+          };
+
+          // Send email
+          emailjs
+            .send("service_6wbij6m", "template_tvi45uh", formData)
+            .then(
+              function (response) {
+                document.getElementById("statusMessage").innerHTML =
+                  "Message sent successfully!";
+                document.getElementById("statusMessage").style.color = "green";
+                document.getElementById("contactForm").reset();
+              },
+              function (error) {
+                document.getElementById("statusMessage").innerHTML =
+                  "Failed to send message. Try again later.";
+                document.getElementById("statusMessage").style.color = "red";
+              }
+            )
+            .finally(function () {
+              // Hide loader and enable button
+              document.getElementById("loader").style.display = "none";
+              document.getElementById("submitBtn").disabled = false;
+            });
+        });
+    </script>
+
+    <!-- FontAwesome Icons (For Social Links) -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Scroll to Top Button -->
     <button
