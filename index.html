@@ -1,37 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abu Osama-Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="prefetch"
-      href="https://images.unsplash.com/photo-1610438250910-01cb769c1334?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDkwOTcxOTd8&ixlib=rb-4.0.3&q=1"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./viewbox.css" />
-  </head>
-  <body>
-    <!-- Hero Section -->
-    <div
-      class="app-container relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white pt-24 sm:pt-32"
-      id="hero"
-    >
-      <!-- Navigation Bar -->
-      <nav
-        style="
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abu Osama-Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="prefetch"
+    href="https://images.unsplash.com/photo-1610438250910-01cb769c1334?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDkwOTcxOTd8&ixlib=rb-4.0.3&q=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./viewbox.css" />
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <div
+    class="app-container relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white pt-24 sm:pt-32"
+    id="hero">
+    <!-- Navigation Bar -->
+    <nav style="
           position: fixed;
           top: 0;
           left: 0;
@@ -42,116 +33,63 @@
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
           z-index: 1000;
           transition: all 0.3s ease-in-out;
-        "
-      >
-        <div class="container mx-auto flex justify-between items-center px-6">
-          <a
-            href="#hero"
-            style="
+        ">
+      <div class="container mx-auto flex justify-between items-center px-6">
+        <a href="#hero" style="
               font-size: 1.8rem;
               font-weight: bold;
               color: white;
               text-decoration: none;
               transition: color 0.3s ease-in-out;
-            "
-            onmouseover="this.style.color='#facc15'"
-            onmouseout="this.style.color='white'"
-            >Abu Osama Shaikh</a
-          >
+            " onmouseover="this.style.color='#facc15'" onmouseout="this.style.color='white'">Abu Osama Shaikh</a>
 
-          <!-- Hamburger Icon for Mobile -->
-          <div class="md:hidden">
-            <button
-              id="mobile-menu-button"
-              class="text-white focus:outline-none"
-            >
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                ></path>
-              </svg>
-            </button>
-          </div>
-
-          <!-- Desktop Menu -->
-          <div class="hidden md:flex space-x-6">
-            <a class="hover:text-yellow-300 transition-colors" href="#hero"
-              >Home</a
-            >
-            <a class="hover:text-yellow-300 transition-colors" href="#projects"
-              >Projects</a
-            >
-            <a class="hover:text-yellow-300 transition-colors" href="#about"
-              >About</a
-            >
-            <a class="hover:text-yellow-300 transition-colors" href="#contact"
-              >Contact</a
-            >
-          </div>
-
-          <!-- Mobile Menu (Initially hidden) -->
-          <div
-            id="mobile-menu"
-            class="hidden md:hidden absolute top-full left-0 w-full bg-gray-900 text-white space-y-4 py-4 text-center"
-          >
-            <a
-              class="block hover:text-yellow-300 transition-colors"
-              href="#hero"
-              >Home</a
-            >
-            <a
-              class="block hover:text-yellow-300 transition-colors"
-              href="#projects"
-              >Projects</a
-            >
-            <a
-              class="block hover:text-yellow-300 transition-colors"
-              href="#about"
-              >About</a
-            >
-            <a
-              class="block hover:text-yellow-300 transition-colors"
-              href="#contact"
-              >Contact</a
-            >
-          </div>
+        <!-- Hamburger Icon for Mobile -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
         </div>
-      </nav>
 
-      <!-- Main Content with Animations -->
-      <div
-        class="container mx-auto flex flex-col md:flex-row items-center justify-between text-center md:text-left px-6 py-12"
-      >
-        <!-- Text Content with Typing Animation -->
-        <div class="md:w-1/2">
-          <h2 class="text-4xl md:text-5xl font-semibold mb-6">
-            <span id="typing-text"></span>
-          </h2>
-          <p
-            class="text-lg md:text-xl font-light max-w-lg mx-auto md:mx-0 fade-in"
-          >
-            With over three years of experience, I specialize in building
-            dynamic and scalable web applications. Passionate about technology
-            and dedicated to delivering high-quality software.
-          </p>
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-6">
+          <a class="hover:text-yellow-300 transition-colors" href="#hero">Home</a>
+          <a class="hover:text-yellow-300 transition-colors" href="#projects">Projects</a>
+          <a class="hover:text-yellow-300 transition-colors" href="#about">About</a>
+          <a class="hover:text-yellow-300 transition-colors" href="#contact">Contact</a>
+        </div>
 
-          <!-- Buttons with Fade-in -->
-          <div
-            class="mt-8 flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 fade-in"
-          >
-            <a
-              href="https://github.com/Shady-shaikh"
-              target="_blank"
-              style="
+        <!-- Mobile Menu (Initially hidden) -->
+        <div id="mobile-menu"
+          class="hidden md:hidden absolute top-full left-0 w-full bg-gray-900 text-white space-y-4 py-4 text-center">
+          <a class="block hover:text-yellow-300 transition-colors" href="#hero">Home</a>
+          <a class="block hover:text-yellow-300 transition-colors" href="#projects">Projects</a>
+          <a class="block hover:text-yellow-300 transition-colors" href="#about">About</a>
+          <a class="block hover:text-yellow-300 transition-colors" href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content with Animations -->
+    <div
+      class="container mx-auto flex flex-col md:flex-row items-center justify-between text-center md:text-left px-6 py-12">
+      <!-- Text Content with Typing Animation -->
+      <div class="md:w-1/2">
+        <h2 class="text-4xl md:text-5xl font-semibold mb-6">
+          <span id="typing-text"></span>
+        </h2>
+        <p class="text-lg md:text-xl font-light max-w-lg mx-auto md:mx-0 fade-in">
+          With over three years of experience, I specialize in building
+          dynamic and scalable web applications. Passionate about technology
+          and dedicated to delivering high-quality software.
+        </p>
+
+        <!-- Buttons with Fade-in -->
+        <div
+          class="mt-8 flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 fade-in">
+          <a href="https://github.com/Shady-shaikh" target="_blank" style="
                 padding: 12px 24px;
                 background: #facc15;
                 color: #1f2937;
@@ -159,15 +97,8 @@
                 text-decoration: none;
                 border-radius: 8px;
                 transition: transform 0.3s ease-in-out;
-              "
-              onmouseover="this.style.transform='scale(1.1)'"
-              onmouseout="this.style.transform='scale(1)'"
-              >GitHub</a
-            >
-            <a
-              href="https://in.linkedin.com/in/abu-osama-shaikh-81294a306"
-              target="_blank"
-              style="
+              " onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">GitHub</a>
+          <a href="https://in.linkedin.com/in/abu-osama-shaikh-81294a306" target="_blank" style="
                 padding: 12px 24px;
                 background: #3b82f6;
                 color: white;
@@ -175,15 +106,9 @@
                 text-decoration: none;
                 border-radius: 8px;
                 transition: transform 0.3s ease-in-out;
-              "
-              onmouseover="this.style.transform='scale(1.1)'"
-              onmouseout="this.style.transform='scale(1)'"
-              >LinkedIn</a
-            >
-            <a
-              href="https://drive.google.com/file/d/19_6cYCec5wBdPzwGRBoND_zClXir6NoN/view"
-              target="_blank"
-              style="
+              " onmouseover="this.style.transform='scale(1.1)'"
+            onmouseout="this.style.transform='scale(1)'">LinkedIn</a>
+          <a href="https://drive.google.com/file/d/19_6cYCec5wBdPzwGRBoND_zClXir6NoN/view" target="_blank" style="
                 padding: 12px 24px;
                 background: #22c55e;
                 color: white;
@@ -191,17 +116,13 @@
                 text-decoration: none;
                 border-radius: 8px;
                 transition: transform 0.3s ease-in-out;
-              "
-              onmouseover="this.style.transform='scale(1.1)'"
-              onmouseout="this.style.transform='scale(1)'"
-              >Download Resume</a
-            >
-          </div>
+              " onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">Download
+            Resume</a>
         </div>
+      </div>
 
-        <!-- Image Section with Fade-in -->
-        <div
-          style="
+      <!-- Image Section with Fade-in -->
+      <div style="
             position: relative;
             width: 270px;
             height: 270px;
@@ -210,23 +131,14 @@
             overflow: hidden;
             border: 4px solid #facc15;
             transition: transform 0.3s ease-in-out;
-          "
-          onmouseover="this.style.transform='scale(1.05)'"
-          onmouseout="this.style.transform='scale(1)'"
-        >
-          <img
-            src="./imgs/head.jpeg"
-            alt="Profile Picture"
-            style="width: 100%; height: 100%; object-fit: cover"
-          />
-        </div>
+          " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" class="mt-2">
+        <img src="./imgs/head.jpeg" alt="Profile Picture" style="width: 100%; height: 100%; object-fit: cover" />
       </div>
     </div>
+  </div>
 
-    <!-- About Section -->
-    <div
-      id="about"
-      style="
+  <!-- About Section -->
+  <div id="about" style="
         position: relative;
         min-height: 100vh;
         background: linear-gradient(to right, #1f2937, #111827);
@@ -237,19 +149,15 @@
         align-items: center;
         justify-content: center;
         text-align: left;
-      "
-    >
-      <!-- Image Section (Left) -->
-      <div
-        style="
+      ">
+    <!-- Image Section (Left) -->
+    <div style="
           flex: 1;
           display: flex;
           justify-content: center;
           align-items: center;
-        "
-      >
-        <div
-          style="
+        ">
+      <div style="
             position: relative;
             width: 250px;
             height: 250px;
@@ -259,47 +167,36 @@
             padding: 5px;
             background: linear-gradient(45deg, yellow, transparent, yellow);
             animation: rotate-border 4s linear infinite;
-          "
-        >
-          <img
-            src="https://images.unsplash.com/photo-1610438250910-01cb769c1334?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDkwOTcxOTd8&ixlib=rb-4.0.3&q=1"
-            alt="Profile Picture"
-            style="
+          ">
+        <img
+          src="https://images.unsplash.com/photo-1610438250910-01cb769c1334?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDkwOTcxOTd8&ixlib=rb-4.0.3&q=1"
+          alt="Profile Picture" style="
               width: 100%;
               height: 100%;
               object-fit: cover;
               transition: transform 0.5s ease-in-out;
-            "
-            onmouseover="this.style.transform='scale(1.1)'"
-            onmouseout="this.style.transform='scale(1)'"
-          />
-        </div>
+            " onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" />
       </div>
+    </div>
 
-      <!-- Text Content (Right) -->
-      <div
-        style="
+    <!-- Text Content (Right) -->
+    <div style="
           flex: 1.5;
           max-width: 600px;
           background: rgba(31, 41, 55, 0.9);
           padding: 30px;
           border-radius: 10px;
           animation: fadeInUp 1s ease-in-out;
-        "
-      >
-        <h1
-          style="
+        " class="mt-2">
+      <h1 style="
             font-size: 3rem;
             font-weight: bold;
             letter-spacing: 2px;
             color: white;
-          "
-        >
-          About <span style="color: #facc15">Me</span>
-        </h1>
-        <p
-          id="typing-effect"
-          style="
+          ">
+        About <span style="color: #facc15">Me</span>
+      </h1>
+      <p id="typing-effect" style="
             font-size: 1.2rem;
             color: #d1d5db;
             margin-top: 10px;
@@ -308,1075 +205,684 @@
             border-right: 3px solid yellow;
             width: 0;
             display: inline-block;
-          "
-        ></p>
+          "></p>
 
-        <p style="font-size: 1.1rem; line-height: 1.6; margin-top: 15px">
-          I am a highly skilled
-          <span style="color: #facc15; font-weight: bold"
-            >Full-Stack Developer</span
-          >
-          with expertise in PHP (Laravel, CodeIgniter, Yii2, Symfony) and
-          Node.js (Express, Mongoose, Firebase), specializing in building
-          scalable web applications. With a strong background in backend
-          development, database optimization, and API integrations, I have
-          successfully enhanced project efficiency and automation.
-        </p>
-        <p style="font-size: 1.1rem; line-height: 1.6; margin-top: 15px">
-          I have led teams and optimized project workflows, achieving a
-          <span style="color: #facc15; font-weight: bold">30% reduction</span>
-          in bottlenecks through improved code structure and database query
-          optimizations. My experience includes working with AWS (S3), Git,
-          Vapor, Zoho Books, and Zoho Inventory, ensuring seamless deployment
-          and financial management solutions.
-        </p>
-        <p style="font-size: 1.1rem; line-height: 1.6; margin-top: 15px">
-          Additionally, I have developed email verification systems, automated
-          queue-based job scheduling, and built timer-based task execution
-          systems, significantly improving processing efficiency. My work on
-          <span style="color: #facc15; font-weight: bold"
-            >payment gateway integrations</span
-          >
-          (PayU Money, Razorpay) has enhanced transaction efficiency by 15%.
-        </p>
-        <p style="font-size: 1.1rem; line-height: 1.6; margin-top: 15px">
-          Beyond backend expertise, I have built cross-platform applications
-          using
-          <span style="color: #facc15; font-weight: bold"
-            >Flutter, Dart, and Ionic Cordova</span
-          >, improving mobile accessibility and processing speeds. My
-          contribution to data visualization projects using graphs and analytics
-          in Symfony-based applications has provided businesses with deeper
-          insights into their data.
-        </p>
-        <p style="font-size: 1.1rem; line-height: 1.6; margin-top: 15px">
-          Passionate about
-          <span style="color: #facc15; font-weight: bold">problem-solving</span>
-          and
-          <span style="color: #facc15; font-weight: bold">optimization</span>, I
-          thrive in fast-paced environments and continuously seek to enhance
-          system performance, automation, and scalability.
-        </p>
-      </div>
+      <p style="font-size: 1.1rem; line-height: 1.6; margin-top: 15px">
+        I am a highly skilled
+        <span style="color: #facc15; font-weight: bold">Full-Stack Developer</span>
+        with expertise in PHP (Laravel, CodeIgniter, Yii2, Symfony) and
+        Node.js (Express, Mongoose, Firebase), specializing in building
+        scalable web applications. With a strong background in backend
+        development, database optimization, and API integrations, I have
+        successfully enhanced project efficiency and automation.
+      </p>
+      <p style="font-size: 1.1rem; line-height: 1.6; margin-top: 15px">
+        I have led teams and optimized project workflows, achieving a
+        <span style="color: #facc15; font-weight: bold">30% reduction</span>
+        in bottlenecks through improved code structure and database query
+        optimizations. My experience includes working with AWS (S3), Git,
+        Vapor, Zoho Books, and Zoho Inventory, ensuring seamless deployment
+        and financial management solutions.
+      </p>
+      <p style="font-size: 1.1rem; line-height: 1.6; margin-top: 15px">
+        Additionally, I have developed email verification systems, automated
+        queue-based job scheduling, and built timer-based task execution
+        systems, significantly improving processing efficiency. My work on
+        <span style="color: #facc15; font-weight: bold">payment gateway integrations</span>
+        (PayU Money, Razorpay) has enhanced transaction efficiency by 15%.
+      </p>
+      <p style="font-size: 1.1rem; line-height: 1.6; margin-top: 15px">
+        Beyond backend expertise, I have built cross-platform applications
+        using
+        <span style="color: #facc15; font-weight: bold">Flutter, Dart, and Ionic Cordova</span>, improving mobile
+        accessibility and processing speeds. My
+        contribution to data visualization projects using graphs and analytics
+        in Symfony-based applications has provided businesses with deeper
+        insights into their data.
+      </p>
+      <p style="font-size: 1.1rem; line-height: 1.6; margin-top: 15px">
+        Passionate about
+        <span style="color: #facc15; font-weight: bold">problem-solving</span>
+        and
+        <span style="color: #facc15; font-weight: bold">optimization</span>, I
+        thrive in fast-paced environments and continuously seek to enhance
+        system performance, automation, and scalability.
+      </p>
     </div>
+  </div>
 
-    <!-- Skills Section -->
-    <div
-      class="app-container relative min-h-screen bg-gradient-to-r from-gray-800 to-gray-900 text-white"
-      id="skills"
-    >
-      <!-- Container -->
-      <div class="container mx-auto px-6 py-12">
-        <!-- Heading with Animation -->
-        <div class="text-center mb-12 animate-fadeIn animate-slideUp">
-          <h1 class="text-5xl md:text-6xl font-bold tracking-wider">
-            My <span class="text-yellow-400">Skills</span>
-          </h1>
-        </div>
-
-        <!-- Skills Categories with Hover Effects -->
-        <ul class="flex flex-wrap justify-center gap-4 mb-12">
-          <li>
-            <button
-              class="relative px-6 py-3 rounded-full border border-yellow-400 text-yellow-400 font-semibold text-lg tracking-wide overflow-hidden bg-transparent backdrop-blur-md shadow-lg transition-all duration-500 ease-in-out hover:bg-yellow-400 hover:shadow-yellow-500/50 group"
-            >
-              <span
-                class="absolute inset-0 w-0 bg-white opacity-30 transition-all duration-500 group-hover:w-full"
-              ></span>
-              Web Development
-            </button>
-          </li>
-          <li>
-            <button
-              class="relative px-6 py-3 rounded-full border border-yellow-400 text-yellow-400 font-semibold text-lg tracking-wide overflow-hidden bg-transparent backdrop-blur-md shadow-lg transition-all duration-500 ease-in-out hover:bg-yellow-400 hover:shadow-yellow-500/50 group"
-            >
-              <span
-                class="absolute inset-0 w-0 bg-white opacity-30 transition-all duration-500 group-hover:w-full"
-              ></span>
-              PHP Development
-            </button>
-          </li>
-          <li>
-            <button
-              class="relative px-6 py-3 rounded-full border border-yellow-400 text-yellow-400 font-semibold text-lg tracking-wide overflow-hidden bg-transparent backdrop-blur-md shadow-lg transition-all duration-500 ease-in-out hover:bg-yellow-400 hover:shadow-yellow-500/50 group"
-            >
-              <span
-                class="absolute inset-0 w-0 bg-white opacity-30 transition-all duration-500 group-hover:w-full"
-              ></span>
-              API Development
-            </button>
-          </li>
-          <li>
-            <button
-              class="relative px-6 py-3 rounded-full border border-yellow-400 text-yellow-400 font-semibold text-lg tracking-wide overflow-hidden bg-transparent backdrop-blur-md shadow-lg transition-all duration-500 ease-in-out hover:bg-yellow-400 hover:shadow-yellow-500/50 group"
-            >
-              <span
-                class="absolute inset-0 w-0 bg-white opacity-30 transition-all duration-500 group-hover:w-full"
-              ></span>
-              Software Development
-            </button>
-          </li>
-        </ul>
-
-        <!-- Skills Grid with Hover Animations -->
-        <div
-          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6"
-        >
-          <!-- Skill Item -->
-          <!-- Repeat for each skill item -->
-          <!-- Skill Item -->
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/php.png"
-              alt="PHP"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">PHP</p>
-          </div>
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/database.png"
-              alt="SQL"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">SQL</p>
-          </div>
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/laravel.png"
-              alt="Laravel"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">Laravel</p>
-          </div>
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/ci.png"
-              alt="Codeigniter"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">Codeigniter</p>
-          </div>
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/yii2.png"
-              alt="Yii2"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">Yii2</p>
-          </div>
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/json-file.png"
-              alt="JSON"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">JSON</p>
-          </div>
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/js.png"
-              alt="JavaScript"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">JavaScript</p>
-          </div>
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/web.png"
-              alt="Jquery/Ajax"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">jQuery/Ajax</p>
-          </div>
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/java.png"
-              alt="Java"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">Java</p>
-          </div>
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/android.png"
-              alt="Android Studio"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">Android Studio</p>
-          </div>
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/html.png"
-              alt="HTML"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">HTML</p>
-          </div>
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/css-3.png"
-              alt="CSS"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">CSS</p>
-          </div>
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/postman.png"
-              alt="POSTMAN"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">POSTMAN</p>
-          </div>
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/api.png"
-              alt="API"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">API</p>
-          </div>
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/firebase.png"
-              alt="Firebase"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">Firebase</p>
-          </div>
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/sqlite.png"
-              alt="SQLite"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">SQLite</p>
-          </div>
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/letter-c.png"
-              alt="C/C++"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">C/C++</p>
-          </div>
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/zohobooks.png"
-              alt="Zoho Books"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">Zoho Books</p>
-          </div>
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/flutter.jpg"
-              alt="Flutter"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">Flutter</p>
-          </div>
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/dart.png"
-              alt="Dart"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">Dart</p>
-          </div>
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/node-js.png"
-              alt="Node.js"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">Node.js</p>
-          </div>
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/express-js.png"
-              alt="Express.js"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">Express.js</p>
-          </div>
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/mongo-db.png"
-              alt="MongoDB"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">MongoDB</p>
-          </div>
-          <div
-            class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50"
-          >
-            <img
-              src="./imgs/symfony.png"
-              alt="Symfony"
-              class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6"
-            />
-            <p class="text-lg font-semibold">Symfony</p>
-          </div>
-          <!-- Add other skills similarly -->
-        </div>
-
-        <!-- Decorative elements with Animation -->
-        <div
-          class="absolute h-48 polka_dots -left-16 top-1/4 -z-10 rotate-90 aspect-video opacity-20 animate-pulse"
-        ></div>
-        <div
-          class="absolute h-64 polka_dots right-1/4 bottom-1/4 -z-10 opacity-30 animate-pulse"
-        ></div>
-        <div
-          class="circle h-1/3 skill_circle aspect-square rounded-full absolute right-8 top-2/4 -z-10 opacity-30 animate-pulse"
-        ></div>
-      </div>
-    </div>
-
-    <!-- Project Section -->
-    <div
-      class="app-container relative min-h-screen bg-gradient-to-r from-gray-800 to-gray-900 text-white"
-      id="projects"
-    >
-      <div class="container flex flex-col mx-auto px-4 py-8">
-        <div
-          class="text-center mb-12 animate__animated animate__fadeIn animate__delay-1s"
-        >
-          <h1 class="text-5xl md:text-6xl font-bold tracking-wider">
-            My <span class="text-yellow-400">Projects</span>
-          </h1>
-        </div>
-
-        <div
-          class="project_container flex flex-wrap justify-center gap-6 py-4 px-4 sm:px-0"
-        >
-          <!-- Project Item -->
-          <div
-            class="project_item flex-shrink-0 w-80 bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 animate__animated animate__fadeIn animate__delay-3s"
-          >
-            <a href="./projects/gurkul.png" class="thumbnail1" title="">
-              <img src="./projects/gurkul.png" alt="" class="img-fluid" />
-            </a>
-            <a
-              href="./projects/gurukul1.png"
-              class="thumbnail1 d-none"
-              title=""
-            >
-              <img src="./projects/gurukul1.png" alt="" class="img-fluid" />
-            </a>
-            <a
-              href="./projects/gurukul (1).png"
-              class="thumbnail1 d-none"
-              title=""
-            >
-              <img src="./projects/gurukul (1).png" alt="" class="img-fluid" />
-            </a>
-            <a
-              href="./projects/gurukul (2).png"
-              class="thumbnail1 d-none"
-              title=""
-            >
-              <img src="./projects/gurukul (2).png" alt="" class="img-fluid" />
-            </a>
-            <a
-              href="./projects/gurukul (3).png"
-              class="thumbnail1 d-none"
-              title=""
-            >
-              <img src="./projects/gurukul (3).png" alt="" class="img-fluid" />
-            </a>
-            <a
-              href="./projects/gurukul (4).png"
-              class="thumbnail1 d-none"
-              title=""
-            >
-              <img src="./projects/gurukul (4).png" alt="" class="img-fluid" />
-            </a>
-            <a
-              href="./projects/gurukul (5).png"
-              class="thumbnail1 d-none"
-              title=""
-            >
-              <img src="./projects/gurukul (5).png" alt="" class="img-fluid" />
-            </a>
-            <div class="p-4">
-              <h2 class="font-bold text-xl mb-2">School Management System</h2>
-              <h6 class="text-gray-400 mb-2">Contributed</h6>
-              <p class="text-gray-300 mb-4">July 2022 - Sep 2022</p>
-            </div>
-          </div>
-
-          <div
-            class="project_item flex-shrink-0 w-80 bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 animate__animated animate__fadeIn animate__delay-3s"
-          >
-            <a href="./projects/pluspoint.png" class="thumbnail4" title="">
-              <img src="./projects/pluspoint.png" alt="" class="img-fluid" />
-            </a>
-            <a
-              href="./projects/pluspoint (1).png"
-              class="thumbnail4 d-none"
-              title=""
-            >
-              <img
-                src="./projects/pluspoint (1).png"
-                alt=""
-                class="img-fluid"
-              />
-            </a>
-            <a
-              href="./projects/pluspoint (2).png"
-              class="thumbnail4 d-none"
-              title=""
-            >
-              <img
-                src="./projects/pluspoint (2).png"
-                alt=""
-                class="img-fluid"
-              />
-            </a>
-            <a
-              href="./projects/pluspoint (3).png"
-              class="thumbnail4 d-none"
-              title=""
-            >
-              <img
-                src="./projects/pluspoint (3).png"
-                alt=""
-                class="img-fluid"
-              />
-            </a>
-            <a
-              href="./projects/pluspoint (4).png"
-              class="thumbnail4 d-none"
-              title=""
-            >
-              <img
-                src="./projects/pluspoint (4).png"
-                alt=""
-                class="img-fluid"
-              />
-            </a>
-            <a
-              href="./projects/pluspoint (5).png"
-              class="thumbnail4 d-none"
-              title=""
-            >
-              <img
-                src="./projects/pluspoint (5).png"
-                alt=""
-                class="img-fluid"
-              />
-            </a>
-            <div class="p-4">
-              <h2 class="font-bold text-xl mb-2">
-                Pluspoint Clasessapp (Frontend - Backend)
-              </h2>
-              <h6 class="text-gray-400 mb-2">Contributed</h6>
-              <p class="text-gray-300 mb-4">April 2023 - May 2023</p>
-            </div>
-          </div>
-
-          <div
-            class="project_item flex-shrink-0 w-80 bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 animate__animated animate__fadeIn animate__delay-3s"
-          >
-            <a href="./projects/ideaportal.png" class="thumbnail3" title="">
-              <img src="./projects/ideaportal.png" alt="" class="img-fluid" />
-            </a>
-            <a
-              href="./projects/ideaportal (1).png"
-              class="thumbnail3 d-none"
-              title=""
-            >
-              <img
-                src="./projects/ideaportal (1).png"
-                alt=""
-                class="img-fluid"
-              />
-            </a>
-            <a
-              href="./projects/ideaportal (2).png"
-              class="thumbnail3 d-none"
-              title=""
-            >
-              <img
-                src="./projects/ideaportal (2).png"
-                alt=""
-                class="img-fluid"
-              />
-            </a>
-            <a
-              href="./projects/ideaportal (3).png"
-              class="thumbnail3 d-none"
-              title=""
-            >
-              <img
-                src="./projects/ideaportal (3).png"
-                alt=""
-                class="img-fluid"
-              />
-            </a>
-            <a
-              href="./projects/ideaportal (4).png"
-              class="thumbnail3 d-none"
-              title=""
-            >
-              <img
-                src="./projects/ideaportal (4).png"
-                alt=""
-                class="img-fluid"
-              />
-            </a>
-            <a
-              href="./projects/ideaportal (5).png"
-              class="thumbnail3 d-none"
-              title=""
-            >
-              <img
-                src="./projects/ideaportal (5).png"
-                alt=""
-                class="img-fluid"
-              />
-            </a>
-            <a
-              href="./projects/ideaportal (6).png"
-              class="thumbnail3 d-none"
-              title=""
-            >
-              <img
-                src="./projects/ideaportal (6).png"
-                alt=""
-                class="img-fluid"
-              />
-            </a>
-            <a
-              href="./projects/ideaportal (7).png"
-              class="thumbnail3 d-none"
-              title=""
-            >
-              <img
-                src="./projects/ideaportal (7).png"
-                alt=""
-                class="img-fluid"
-              />
-            </a>
-            <div class="p-4">
-              <h2 class="font-bold text-xl mb-2">
-                Ideaportal Jmbaxi (Frontend - Backend)
-              </h2>
-              <h6 class="text-gray-400 mb-2">Contributed</h6>
-              <p class="text-gray-300 mb-4">Feb 2023 - April 2023</p>
-            </div>
-          </div>
-
-          <div
-            class="project_item flex-shrink-0 w-80 bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 animate__animated animate__fadeIn animate__delay-3s"
-          >
-            <a href="./projects/vivara (1).png" class="thumbnail5" title="">
-              <img src="./projects/vivara (1).png" alt="" class="img-fluid" />
-            </a>
-            <a
-              href="./projects/vivara (2).png"
-              class="thumbnail5 d-none"
-              title=""
-            >
-              <img src="./projects/vivara (2).png" alt="" class="img-fluid" />
-            </a>
-            <a
-              href="./projects/vivara (3).png"
-              class="thumbnail5 d-none"
-              title=""
-            >
-              <img src="./projects/vivara (3).png" alt="" class="img-fluid" />
-            </a>
-            <a
-              href="./projects/vivara (4).png"
-              class="thumbnail5 d-none"
-              title=""
-            >
-              <img src="./projects/vivara (4).png" alt="" class="img-fluid" />
-            </a>
-            <a
-              href="./projects/vivara (5).png"
-              class="thumbnail5 d-none"
-              title=""
-            >
-              <img src="./projects/vivara (5).png" alt="" class="img-fluid" />
-            </a>
-            <a
-              href="./projects/vivara (6).png"
-              class="thumbnail5 d-none"
-              title=""
-            >
-              <img src="./projects/vivara (6).png" alt="" class="img-fluid" />
-            </a>
-            <a
-              href="./projects/vivara (7).png"
-              class="thumbnail5 d-none"
-              title=""
-            >
-              <img src="./projects/vivara (7).png" alt="" class="img-fluid" />
-            </a>
-            <div class="p-4">
-              <h2 class="font-bold text-xl mb-2">
-                Vivara-Zoho Books (Frontend - Backend)
-              </h2>
-              <h6 class="text-gray-400 mb-2">Scratch</h6>
-              <p class="text-gray-300 mb-4">May 2023 - Sep 2023</p>
-              <a
-                href="https://github.com/Shady-shaikh/vivara"
-                target="_blank"
-                class="inline-block px-4 py-2 bg-yellow-400 text-gray-900 rounded-lg font-semibold"
-                title="View Project"
-              >
-                View Project
-              </a>
-            </div>
-          </div>
-
-          <div
-            class="project_item flex-shrink-0 w-80 bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 animate__animated animate__fadeIn animate__delay-3s"
-          >
-            <a href="./projects/eureka (1).png" class="thumbnail6" title="">
-              <img src="./projects/eureka (1).png" alt="" class="img-fluid" />
-            </a>
-            <a
-              href="./projects/eureka (2).png"
-              class="thumbnail6 d-none"
-              title=""
-            >
-              <img src="./projects/eureka (2).png" alt="" class="img-fluid" />
-            </a>
-            <a
-              href="./projects/eureka (3).png"
-              class="thumbnail6 d-none"
-              title=""
-            >
-              <img src="./projects/eureka (3).png" alt="" class="img-fluid" />
-            </a>
-            <a
-              href="./projects/eureka (4).png"
-              class="thumbnail6 d-none"
-              title=""
-            >
-              <img
-                src="./projects/pluspoint (3).png"
-                alt=""
-                class="img-fluid"
-              />
-            </a>
-            <a
-              href="./projects/eureka (5).png"
-              class="thumbnail6 d-none"
-              title=""
-            >
-              <img src="./projects/eureka (5).png" alt="" class="img-fluid" />
-            </a>
-            <a
-              href="./projects/eureka (6).png"
-              class="thumbnail6 d-none"
-              title=""
-            >
-              <img src="./projects/eureka (6).png" alt="" class="img-fluid" />
-            </a>
-            <a
-              href="./projects/eureka (7).png"
-              class="thumbnail6 d-none"
-              title=""
-            >
-              <img src="./projects/eureka (7).png" alt="" class="img-fluid" />
-            </a>
-            <a
-              href="./projects/eureka (8).png"
-              class="thumbnail6 d-none"
-              title=""
-            >
-              <img src="./projects/eureka (8).png" alt="" class="img-fluid" />
-            </a>
-            <div class="p-4">
-              <h2 class="font-bold text-xl mb-2">Eureka-SAP System</h2>
-              <h6 class="text-gray-400 mb-2">Scratch</h6>
-              <p class="text-gray-300 mb-4">Sep 2023 - April 2024</p>
-              <a
-                href="https://github.com/Shady-shaikh/eureka"
-                target="_blank"
-                class="inline-block px-4 py-2 bg-yellow-400 text-gray-900 rounded-lg font-semibold"
-                title="View Project"
-              >
-                View Project
-              </a>
-            </div>
-          </div>
-          <!-- Add more project items similarly -->
-        </div>
-
-        <div
-          class="text-center mt-8 mb-4 animate__animated animate__fadeIn animate__delay-6s"
-        >
-          <a
-            href="https://github.com/Shady-shaikh"
-            target="_blank"
-            class="text-yellow-400 underline"
-            >See More Projects on GitHub</a
-          >
-        </div>
-      </div>
-    </div>
-    <!-- Contact Section -->
-    <div
-      class="relative bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 px-6"
-      id="contact"
-    >
-      <div class="container mx-auto max-w-2xl text-center">
-        <h1
-          class="text-5xl font-bold tracking-wider mb-6 animate__animated animate__fadeInDown"
-        >
-          Contact Me
+  <!-- Skills Section -->
+  <div class="app-container relative min-h-screen bg-gradient-to-r from-gray-800 to-gray-900 text-white" id="skills">
+    <!-- Container -->
+    <div class="container mx-auto px-6 py-12">
+      <!-- Heading with Animation -->
+      <div class="text-center mb-12 animate-fadeIn animate-slideUp">
+        <h1 class="text-5xl md:text-6xl font-bold tracking-wider">
+          My <span class="text-yellow-400">Skills</span>
         </h1>
-        <p
-          class="text-lg mb-8 animate__animated animate__fadeIn animate__delay-1s"
-        >
-          Let's connect! Feel free to reach out via email, phone, or social
-          media.
-        </p>
+      </div>
 
-        <!-- Contact Form -->
-        <form id="contactForm" class="bg-gray-800 p-6 rounded-lg shadow-lg">
-          <div class="mb-4">
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your Name"
-              class="w-full p-3 rounded-lg bg-gray-700 text-white"
-              required
-            />
-          </div>
-          <div class="mb-4">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your Email"
-              class="w-full p-3 rounded-lg bg-gray-700 text-white"
-              required
-            />
-          </div>
-          <div class="mb-4">
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Your Message"
-              rows="4"
-              class="w-full p-3 rounded-lg bg-gray-700 text-white"
-              required
-            ></textarea>
-          </div>
+      <!-- Skills Categories with Hover Effects -->
+      <ul class="flex flex-wrap justify-center gap-4 mb-12">
+        <li>
           <button
-            type="submit"
-            id="submitBtn"
-            class="w-full py-3 bg-yellow-400 text-gray-900 font-bold rounded-lg hover:bg-yellow-500 transition"
-          >
-            Send Message
+            class="relative px-6 py-3 rounded-full border border-yellow-400 text-yellow-400 font-semibold text-lg tracking-wide overflow-hidden bg-transparent backdrop-blur-md shadow-lg transition-all duration-500 ease-in-out hover:bg-yellow-400 hover:shadow-yellow-500/50 group">
+            <span
+              class="absolute inset-0 w-0 bg-white opacity-30 transition-all duration-500 group-hover:w-full"></span>
+            Web Development
           </button>
-          <div id="loader" class="loader" style="display: none">Sending...</div>
-          <p id="statusMessage" class="text-white mt-3"></p>
-        </form>
+        </li>
+        <li>
+          <button
+            class="relative px-6 py-3 rounded-full border border-yellow-400 text-yellow-400 font-semibold text-lg tracking-wide overflow-hidden bg-transparent backdrop-blur-md shadow-lg transition-all duration-500 ease-in-out hover:bg-yellow-400 hover:shadow-yellow-500/50 group">
+            <span
+              class="absolute inset-0 w-0 bg-white opacity-30 transition-all duration-500 group-hover:w-full"></span>
+            PHP Development
+          </button>
+        </li>
+        <li>
+          <button
+            class="relative px-6 py-3 rounded-full border border-yellow-400 text-yellow-400 font-semibold text-lg tracking-wide overflow-hidden bg-transparent backdrop-blur-md shadow-lg transition-all duration-500 ease-in-out hover:bg-yellow-400 hover:shadow-yellow-500/50 group">
+            <span
+              class="absolute inset-0 w-0 bg-white opacity-30 transition-all duration-500 group-hover:w-full"></span>
+            API Development
+          </button>
+        </li>
+        <li>
+          <button
+            class="relative px-6 py-3 rounded-full border border-yellow-400 text-yellow-400 font-semibold text-lg tracking-wide overflow-hidden bg-transparent backdrop-blur-md shadow-lg transition-all duration-500 ease-in-out hover:bg-yellow-400 hover:shadow-yellow-500/50 group">
+            <span
+              class="absolute inset-0 w-0 bg-white opacity-30 transition-all duration-500 group-hover:w-full"></span>
+            Software Development
+          </button>
+        </li>
+      </ul>
 
-        <p
-          id="successMessage"
-          style="display: none; color: green; margin-top: 10px"
-        >
-          Your message has been sent successfully!
-        </p>
+      <!-- Skills Grid with Hover Animations -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
+        <!-- Skill Item -->
+        <!-- Repeat for each skill item -->
+        <!-- Skill Item -->
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/php.png" alt="PHP"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">PHP</p>
+        </div>
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/database.png" alt="SQL"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">SQL</p>
+        </div>
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/laravel.png" alt="Laravel"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">Laravel</p>
+        </div>
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/ci.png" alt="Codeigniter"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">Codeigniter</p>
+        </div>
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/yii2.png" alt="Yii2"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">Yii2</p>
+        </div>
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/json-file.png" alt="JSON"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">JSON</p>
+        </div>
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/js.png" alt="JavaScript"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">JavaScript</p>
+        </div>
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/web.png" alt="Jquery/Ajax"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">jQuery/Ajax</p>
+        </div>
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/java.png" alt="Java"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">Java</p>
+        </div>
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/android.png" alt="Android Studio"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">Android Studio</p>
+        </div>
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/html.png" alt="HTML"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">HTML</p>
+        </div>
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/css-3.png" alt="CSS"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">CSS</p>
+        </div>
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/postman.png" alt="POSTMAN"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">POSTMAN</p>
+        </div>
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/api.png" alt="API"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">API</p>
+        </div>
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/firebase.png" alt="Firebase"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">Firebase</p>
+        </div>
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/sqlite.png" alt="SQLite"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">SQLite</p>
+        </div>
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/letter-c.png" alt="C/C++"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">C/C++</p>
+        </div>
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/zohobooks.png" alt="Zoho Books"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">Zoho Books</p>
+        </div>
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/flutter.jpg" alt="Flutter"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">Flutter</p>
+        </div>
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/dart.png" alt="Dart"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">Dart</p>
+        </div>
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/node-js.png" alt="Node.js"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">Node.js</p>
+        </div>
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/express-js.png" alt="Express.js"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">Express.js</p>
+        </div>
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/mongo-db.png" alt="MongoDB"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">MongoDB</p>
+        </div>
+        <div
+          class="group flex flex-col items-center bg-gray-800 bg-opacity-50 p-5 rounded-lg shadow-lg backdrop-blur-md border border-gray-700 transform transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:shadow-cyan-500/50">
+          <img src="./imgs/symfony.png" alt="Symfony"
+            class="w-16 h-16 mb-3 transition-transform duration-300 group-hover:rotate-6" />
+          <p class="text-lg font-semibold">Symfony</p>
+        </div>
+        <!-- Add other skills similarly -->
+      </div>
 
-        <!-- Contact Info & Socials -->
-        <div class="mt-8">
-          <p class="text-lg">
-            Email:
-            <a
-              href="mailto:usashaikh86@gmail.com"
-              class="text-yellow-400 hover:underline"
-              >usashaikh86@gmail.com</a
-            >
-          </p>
-          <p class="text-lg">
-            Phone:
-            <a href="tel:+919136393967" class="text-yellow-400 hover:underline"
-              >9136393967</a
-            >
-          </p>
-          <p class="text-lg">Location: Thane, Mumbai</p>
+      <!-- Decorative elements with Animation -->
+      <div class="absolute h-48 polka_dots -left-16 top-1/4 -z-10 rotate-90 aspect-video opacity-20 animate-pulse">
+      </div>
+      <div class="absolute h-64 polka_dots right-1/4 bottom-1/4 -z-10 opacity-30 animate-pulse"></div>
+      <div
+        class="circle h-1/3 skill_circle aspect-square rounded-full absolute right-8 top-2/4 -z-10 opacity-30 animate-pulse">
+      </div>
+    </div>
+  </div>
 
-          <!-- Social Links -->
-          <div class="mt-4 flex justify-center gap-4">
-            <a href="#" class="text-2xl hover:text-yellow-400 transition"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a href="#" class="text-2xl hover:text-yellow-400 transition"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a href="#" class="text-2xl hover:text-yellow-400 transition"
-              ><i class="fab fa-twitter"></i
-            ></a>
+  <!-- Project Section -->
+  <div class="app-container relative min-h-screen bg-gradient-to-r from-gray-800 to-gray-900 text-white" id="projects">
+    <div class="container flex flex-col mx-auto px-4 py-8">
+      <div class="text-center mb-12 animate__animated animate__fadeIn animate__delay-1s">
+        <h1 class="text-5xl md:text-6xl font-bold tracking-wider">
+          My <span class="text-yellow-400">Projects</span>
+        </h1>
+      </div>
+
+      <div class="project_container flex flex-wrap justify-center gap-6 py-4 px-4 sm:px-0">
+        <!-- Project Item -->
+        <div
+          class="project_item flex-shrink-0 w-80 bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 animate__animated animate__fadeIn animate__delay-3s">
+          <a href="./projects/gurkul.png" class="thumbnail1" title="">
+            <img src="./projects/gurkul.png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/gurukul1.png" class="thumbnail1 d-none" title="">
+            <img src="./projects/gurukul1.png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/gurukul (1).png" class="thumbnail1 d-none" title="">
+            <img src="./projects/gurukul (1).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/gurukul (2).png" class="thumbnail1 d-none" title="">
+            <img src="./projects/gurukul (2).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/gurukul (3).png" class="thumbnail1 d-none" title="">
+            <img src="./projects/gurukul (3).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/gurukul (4).png" class="thumbnail1 d-none" title="">
+            <img src="./projects/gurukul (4).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/gurukul (5).png" class="thumbnail1 d-none" title="">
+            <img src="./projects/gurukul (5).png" alt="" class="img-fluid" />
+          </a>
+          <div class="p-4">
+            <h2 class="font-bold text-xl mb-2">School Management System</h2>
+            <h6 class="text-gray-400 mb-2">Contributed</h6>
+            <p class="text-gray-300 mb-4">July 2022 - Sep 2022</p>
           </div>
+        </div>
+
+        <div
+          class="project_item flex-shrink-0 w-80 bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 animate__animated animate__fadeIn animate__delay-3s">
+          <a href="./projects/pluspoint.png" class="thumbnail4" title="">
+            <img src="./projects/pluspoint.png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/pluspoint (1).png" class="thumbnail4 d-none" title="">
+            <img src="./projects/pluspoint (1).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/pluspoint (2).png" class="thumbnail4 d-none" title="">
+            <img src="./projects/pluspoint (2).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/pluspoint (3).png" class="thumbnail4 d-none" title="">
+            <img src="./projects/pluspoint (3).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/pluspoint (4).png" class="thumbnail4 d-none" title="">
+            <img src="./projects/pluspoint (4).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/pluspoint (5).png" class="thumbnail4 d-none" title="">
+            <img src="./projects/pluspoint (5).png" alt="" class="img-fluid" />
+          </a>
+          <div class="p-4">
+            <h2 class="font-bold text-xl mb-2">
+              Pluspoint Clasessapp (Frontend - Backend)
+            </h2>
+            <h6 class="text-gray-400 mb-2">Contributed</h6>
+            <p class="text-gray-300 mb-4">April 2023 - May 2023</p>
+          </div>
+        </div>
+
+        <div
+          class="project_item flex-shrink-0 w-80 bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 animate__animated animate__fadeIn animate__delay-3s">
+          <a href="./projects/ideaportal.png" class="thumbnail3" title="">
+            <img src="./projects/ideaportal.png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/ideaportal (1).png" class="thumbnail3 d-none" title="">
+            <img src="./projects/ideaportal (1).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/ideaportal (2).png" class="thumbnail3 d-none" title="">
+            <img src="./projects/ideaportal (2).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/ideaportal (3).png" class="thumbnail3 d-none" title="">
+            <img src="./projects/ideaportal (3).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/ideaportal (4).png" class="thumbnail3 d-none" title="">
+            <img src="./projects/ideaportal (4).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/ideaportal (5).png" class="thumbnail3 d-none" title="">
+            <img src="./projects/ideaportal (5).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/ideaportal (6).png" class="thumbnail3 d-none" title="">
+            <img src="./projects/ideaportal (6).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/ideaportal (7).png" class="thumbnail3 d-none" title="">
+            <img src="./projects/ideaportal (7).png" alt="" class="img-fluid" />
+          </a>
+          <div class="p-4">
+            <h2 class="font-bold text-xl mb-2">
+              Ideaportal Jmbaxi (Frontend - Backend)
+            </h2>
+            <h6 class="text-gray-400 mb-2">Contributed</h6>
+            <p class="text-gray-300 mb-4">Feb 2023 - April 2023</p>
+          </div>
+        </div>
+
+        <div
+          class="project_item flex-shrink-0 w-80 bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 animate__animated animate__fadeIn animate__delay-3s">
+          <a href="./projects/vivara (1).png" class="thumbnail5" title="">
+            <img src="./projects/vivara (1).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/vivara (2).png" class="thumbnail5 d-none" title="">
+            <img src="./projects/vivara (2).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/vivara (3).png" class="thumbnail5 d-none" title="">
+            <img src="./projects/vivara (3).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/vivara (4).png" class="thumbnail5 d-none" title="">
+            <img src="./projects/vivara (4).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/vivara (5).png" class="thumbnail5 d-none" title="">
+            <img src="./projects/vivara (5).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/vivara (6).png" class="thumbnail5 d-none" title="">
+            <img src="./projects/vivara (6).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/vivara (7).png" class="thumbnail5 d-none" title="">
+            <img src="./projects/vivara (7).png" alt="" class="img-fluid" />
+          </a>
+          <div class="p-4">
+            <h2 class="font-bold text-xl mb-2">
+              Vivara-Zoho Books (Frontend - Backend)
+            </h2>
+            <h6 class="text-gray-400 mb-2">Scratch</h6>
+            <p class="text-gray-300 mb-4">May 2023 - Sep 2023</p>
+            <a href="https://github.com/Shady-shaikh/vivara" target="_blank"
+              class="inline-block px-4 py-2 bg-yellow-400 text-gray-900 rounded-lg font-semibold" title="View Project">
+              View Project
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="project_item flex-shrink-0 w-80 bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 animate__animated animate__fadeIn animate__delay-3s">
+          <a href="./projects/eureka (1).png" class="thumbnail6" title="">
+            <img src="./projects/eureka (1).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/eureka (2).png" class="thumbnail6 d-none" title="">
+            <img src="./projects/eureka (2).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/eureka (3).png" class="thumbnail6 d-none" title="">
+            <img src="./projects/eureka (3).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/eureka (4).png" class="thumbnail6 d-none" title="">
+            <img src="./projects/pluspoint (3).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/eureka (5).png" class="thumbnail6 d-none" title="">
+            <img src="./projects/eureka (5).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/eureka (6).png" class="thumbnail6 d-none" title="">
+            <img src="./projects/eureka (6).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/eureka (7).png" class="thumbnail6 d-none" title="">
+            <img src="./projects/eureka (7).png" alt="" class="img-fluid" />
+          </a>
+          <a href="./projects/eureka (8).png" class="thumbnail6 d-none" title="">
+            <img src="./projects/eureka (8).png" alt="" class="img-fluid" />
+          </a>
+          <div class="p-4">
+            <h2 class="font-bold text-xl mb-2">Eureka-SAP System</h2>
+            <h6 class="text-gray-400 mb-2">Scratch</h6>
+            <p class="text-gray-300 mb-4">Sep 2023 - April 2024</p>
+            <a href="https://github.com/Shady-shaikh/eureka" target="_blank"
+              class="inline-block px-4 py-2 bg-yellow-400 text-gray-900 rounded-lg font-semibold" title="View Project">
+              View Project
+            </a>
+          </div>
+        </div>
+        <!-- Add more project items similarly -->
+      </div>
+
+      <div class="text-center mt-8 mb-4 animate__animated animate__fadeIn animate__delay-6s">
+        <a href="https://github.com/Shady-shaikh" target="_blank" class="text-yellow-400 underline">See More Projects on
+          GitHub</a>
+      </div>
+    </div>
+  </div>
+  <!-- Contact Section -->
+  <div class="relative bg-gradient-to-br from-gray-900 to-gray-800 text-white py-16 px-6" id="contact">
+    <div class="container mx-auto max-w-2xl text-center">
+      <h1 class="text-5xl font-bold tracking-wider mb-6 animate__animated animate__fadeInDown">
+        Contact Me
+      </h1>
+      <p class="text-lg mb-8 animate__animated animate__fadeIn animate__delay-1s">
+        Let's connect! Feel free to reach out via email, phone, or social
+        media.
+      </p>
+
+      <!-- Contact Form -->
+      <form id="contactForm" class="bg-gray-800 p-6 rounded-lg shadow-lg">
+        <div class="mb-4">
+          <input type="text" id="name" name="name" placeholder="Your Name"
+            class="w-full p-3 rounded-lg bg-gray-700 text-white" required />
+        </div>
+        <div class="mb-4">
+          <input type="email" id="email" name="email" placeholder="Your Email"
+            class="w-full p-3 rounded-lg bg-gray-700 text-white" required />
+        </div>
+        <div class="mb-4">
+          <textarea id="message" name="message" placeholder="Your Message" rows="4"
+            class="w-full p-3 rounded-lg bg-gray-700 text-white" required></textarea>
+        </div>
+        <button type="submit" id="submitBtn"
+          class="w-full py-3 bg-yellow-400 text-gray-900 font-bold rounded-lg hover:bg-yellow-500 transition">
+          Send Message
+        </button>
+        <div id="loader" class="loader" style="display: none">Sending...</div>
+        <p id="statusMessage" class="text-white mt-3"></p>
+      </form>
+
+      <p id="successMessage" style="display: none; color: green; margin-top: 10px">
+        Your message has been sent successfully!
+      </p>
+
+      <!-- Contact Info & Socials -->
+      <div class="mt-8">
+        <p class="text-lg">
+          Email:
+          <a href="mailto:usashaikh86@gmail.com" class="text-yellow-400 hover:underline">usashaikh86@gmail.com</a>
+        </p>
+        <p class="text-lg">
+          Phone:
+          <a href="tel:+919136393967" class="text-yellow-400 hover:underline">9136393967</a>
+        </p>
+        <p class="text-lg">Location: Thane, Mumbai</p>
+
+        <!-- Social Links -->
+        <div class="mt-4 flex justify-center gap-4">
+          <a href="#" class="text-2xl hover:text-yellow-400 transition"><i class="fab fa-github"></i></a>
+          <a href="#" class="text-2xl hover:text-yellow-400 transition"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="text-2xl hover:text-yellow-400 transition"><i class="fab fa-twitter"></i></a>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Footer Section -->
-    <footer
-      class="relative bg-gray-900 text-white py-8 text-center overflow-hidden"
-    >
-      <div class="container mx-auto">
-        <p class="text-sm mb-2">
-          &copy; 2024 Usama Shaikh. All rights reserved.
-        </p>
+  <!-- Footer Section -->
+  <footer class="relative bg-gray-900 text-white py-8 text-center overflow-hidden">
+    <div class="container mx-auto">
+      <p class="text-sm mb-2">
+        &copy; 2024 Usama Shaikh. All rights reserved.
+      </p>
 
-        <!-- Quick Links -->
-        <div class="flex justify-center gap-6 text-sm">
-          <a href="#about" class="hover:text-yellow-400 transition">About</a>
-          <a href="#projects" class="hover:text-yellow-400 transition"
-            >Projects</a
-          >
-          <a href="#contact" class="hover:text-yellow-400 transition"
-            >Contact</a
-          >
-        </div>
-
-        <!-- Social Icons -->
-        <div class="mt-4 flex justify-center gap-4">
-          <a href="#" class="text-2xl hover:text-yellow-400 transition"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="#" class="text-2xl hover:text-yellow-400 transition"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a href="#" class="text-2xl hover:text-yellow-400 transition"
-            ><i class="fab fa-twitter"></i
-          ></a>
-        </div>
+      <!-- Quick Links -->
+      <div class="flex justify-center gap-6 text-sm">
+        <a href="#about" class="hover:text-yellow-400 transition">About</a>
+        <a href="#projects" class="hover:text-yellow-400 transition">Projects</a>
+        <a href="#contact" class="hover:text-yellow-400 transition">Contact</a>
       </div>
 
-      <!-- Animated Background Effects -->
-      <div
-        class="absolute top-0 left-0 w-1/3 h-full bg-yellow-300 opacity-20 blur-3xl animate-pulse"
-      ></div>
-      <div
-        class="absolute bottom-0 right-0 w-1/3 h-full bg-yellow-400 opacity-10 blur-3xl animate-pulse"
-      ></div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      <!-- Social Icons -->
+      <div class="mt-4 flex justify-center gap-4">
+        <a href="#" class="text-2xl hover:text-yellow-400 transition"><i class="fab fa-github"></i></a>
+        <a href="#" class="text-2xl hover:text-yellow-400 transition"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="text-2xl hover:text-yellow-400 transition"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
 
-    <script>
-      (function () {
-        emailjs.init("D731Kr6UTDxa7-QVb"); // Replace with your EmailJS Public Key
-      })();
+    <!-- Animated Background Effects -->
+    <div class="absolute top-0 left-0 w-1/3 h-full bg-yellow-300 opacity-20 blur-3xl animate-pulse"></div>
+    <div class="absolute bottom-0 right-0 w-1/3 h-full bg-yellow-400 opacity-10 blur-3xl animate-pulse"></div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
+  <script>
+    (function () {
+      emailjs.init("D731Kr6UTDxa7-QVb"); // Replace with your EmailJS Public Key
+    })();
 
-          // Show loader
-          document.getElementById("loader").style.display = "block";
-          document.getElementById("submitBtn").disabled = true;
+    document
+      .getElementById("contactForm")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
 
-          // Collect form data
-          let formData = {
-            name: document.getElementById("name").value,
-            email: document.getElementById("email").value,
-            message: document.getElementById("message").value,
-          };
+        // Show loader
+        document.getElementById("loader").style.display = "block";
+        document.getElementById("submitBtn").disabled = true;
 
-          // Send email
-          emailjs
-            .send("service_6wbij6m", "template_tvi45uh", formData)
-            .then(
-              function (response) {
-                document.getElementById("statusMessage").innerHTML =
-                  "Message sent successfully!";
-                document.getElementById("statusMessage").style.color = "green";
-                document.getElementById("contactForm").reset();
-              },
-              function (error) {
-                document.getElementById("statusMessage").innerHTML =
-                  "Failed to send message. Try again later.";
-                document.getElementById("statusMessage").style.color = "red";
-              }
-            )
-            .finally(function () {
-              // Hide loader and enable button
-              document.getElementById("loader").style.display = "none";
-              document.getElementById("submitBtn").disabled = false;
-            });
-        });
-    </script>
+        // Collect form data
+        let formData = {
+          name: document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          message: document.getElementById("message").value,
+        };
 
-    <!-- FontAwesome Icons (For Social Links) -->
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
+        // Send email
+        emailjs
+          .send("service_6wbij6m", "template_tvi45uh", formData)
+          .then(
+            function (response) {
+              document.getElementById("statusMessage").innerHTML =
+                "Message sent successfully!";
+              document.getElementById("statusMessage").style.color = "green";
+              document.getElementById("contactForm").reset();
+            },
+            function (error) {
+              document.getElementById("statusMessage").innerHTML =
+                "Failed to send message. Try again later.";
+              document.getElementById("statusMessage").style.color = "red";
+            }
+          )
+          .finally(function () {
+            // Hide loader and enable button
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("submitBtn").disabled = false;
+          });
+      });
+  </script>
 
-    <!-- Scroll to Top Button -->
-    <button
-      id="scrollToTopBtn"
-      class="fixed bottom-4 right-4 bg-yellow-400 text-gray-800 p-3 rounded-full shadow-lg hover:bg-yellow-300 transition-transform transform-gpu hover:scale-105"
-    >
-      &#8679;
-    </button>
+  <!-- FontAwesome Icons (For Social Links) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-    <script>
-      const typingText = document.getElementById("typing-text");
-      const words = [
-        "Software Developer",
-        "PHP Developer",
-        "Backend Developer",
-      ];
-      let wordIndex = 0;
-      let isDeleting = false;
-      let typingSpeed = 110;
+  <!-- Scroll to Top Button -->
+  <button id="scrollToTopBtn"
+    class="fixed bottom-4 right-4 bg-yellow-400 text-gray-800 p-3 rounded-full shadow-lg hover:bg-yellow-300 transition-transform transform-gpu hover:scale-105">
+    &#8679;
+  </button>
 
-      function type() {
-        const currentWord = words[wordIndex];
-        if (!isDeleting) {
-          typingText.innerHTML = currentWord.substring(
-            0,
-            typingText.innerHTML.length + 1
-          );
-          if (typingText.innerHTML === currentWord) {
-            isDeleting = true;
-            typingSpeed = 200; // Pause before deleting
-          }
-        } else {
-          typingText.innerHTML = currentWord.substring(
-            0,
-            typingText.innerHTML.length - 1
-          );
-          if (typingText.innerHTML === "") {
-            isDeleting = false;
-            wordIndex = (wordIndex + 1) % words.length;
-            typingSpeed = 150;
-          }
+  <script>
+    const typingText = document.getElementById("typing-text");
+    const words = [
+      "Software Developer",
+      "PHP Developer",
+      "Backend Developer",
+    ];
+    let wordIndex = 0;
+    let isDeleting = false;
+    let typingSpeed = 110;
+
+    function type() {
+      const currentWord = words[wordIndex];
+      if (!isDeleting) {
+        typingText.innerHTML = currentWord.substring(
+          0,
+          typingText.innerHTML.length + 1
+        );
+        if (typingText.innerHTML === currentWord) {
+          isDeleting = true;
+          typingSpeed = 200; // Pause before deleting
         }
-        setTimeout(type, typingSpeed);
+      } else {
+        typingText.innerHTML = currentWord.substring(
+          0,
+          typingText.innerHTML.length - 1
+        );
+        if (typingText.innerHTML === "") {
+          isDeleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+          typingSpeed = 150;
+        }
       }
+      setTimeout(type, typingSpeed);
+    }
 
-      document.addEventListener("DOMContentLoaded", () =>
-        setTimeout(type, typingSpeed)
-      );
-    </script>
-    <!-- JavaScript to toggle mobile menu -->
-    <script>
-      document
-        .getElementById("mobile-menu-button")
-        .addEventListener("click", function () {
-          const menu = document.getElementById("mobile-menu");
-          menu.classList.toggle("hidden");
-        });
-    </script>
-    <!-- Scroll to Top Button Script -->
-    <script>
-      // Show/Hide the button on scroll
-      window.addEventListener("scroll", function () {
-        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-        if (window.scrollY > 300) {
-          // Adjust this value based on when you want the button to appear
-          scrollToTopBtn.classList.add("block");
-        } else {
-          scrollToTopBtn.classList.remove("block");
-        }
+    document.addEventListener("DOMContentLoaded", () =>
+      setTimeout(type, typingSpeed)
+    );
+  </script>
+  <!-- JavaScript to toggle mobile menu -->
+  <script>
+    document
+      .getElementById("mobile-menu-button")
+      .addEventListener("click", function () {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
       });
+  </script>
+  <!-- Scroll to Top Button Script -->
+  <script>
+    // Show/Hide the button on scroll
+    window.addEventListener("scroll", function () {
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      if (window.scrollY > 300) {
+        // Adjust this value based on when you want the button to appear
+        scrollToTopBtn.classList.add("block");
+      } else {
+        scrollToTopBtn.classList.remove("block");
+      }
+    });
 
-      // Scroll to top on button click
-      document
-        .getElementById("scrollToTopBtn")
-        .addEventListener("click", function () {
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-    </script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <script src="./index.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="./jquery.viewbox.js"></script>
-
-    <script>
-      $(function () {
-        $(".thumbnail1").viewbox();
-        $(".thumbnail2").viewbox();
-        $(".thumbnail3").viewbox();
-        $(".thumbnail4").viewbox();
-        $(".thumbnail5").viewbox();
-        $(".thumbnail6").viewbox();
-        $(".thumbnail7").viewbox();
+    // Scroll to top on button click
+    document
+      .getElementById("scrollToTopBtn")
+      .addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
       });
-    </script>
-  </body>
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./jquery.viewbox.js"></script>
+
+  <script>
+    $(function () {
+      $(".thumbnail1").viewbox();
+      $(".thumbnail2").viewbox();
+      $(".thumbnail3").viewbox();
+      $(".thumbnail4").viewbox();
+      $(".thumbnail5").viewbox();
+      $(".thumbnail6").viewbox();
+      $(".thumbnail7").viewbox();
+    });
+  </script>
+</body>
+
 </html>

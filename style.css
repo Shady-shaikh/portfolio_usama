@@ -14,6 +14,37 @@ body {
     will-change: transform, opacity;
 }
 
+
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        /* Stack elements vertically */
+        text-align: center;
+        padding: 40px 15px;
+        /* Adjust padding for small screens */
+    }
+
+    #about div {
+        flex: unset;
+        width: 100%;
+        /* Full width for small screens */
+    }
+
+    #about img {
+        width: 180px;
+        /* Reduce image size */
+        height: 180px;
+    }
+
+    #about h1 {
+        font-size: 2rem;
+    }
+
+    #about p {
+        font-size: 1rem;
+    }
+}
+
 .k2d {
     font-family: "k2d";
 }
@@ -26,13 +57,18 @@ body {
     height: 24px;
     animation: spin 1s linear infinite;
     margin: 10px auto;
-  }
+}
 
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .glow {
     text-shadow: rgba(86, 201, 255, 0.37) 0px 0px 39px;
 }
